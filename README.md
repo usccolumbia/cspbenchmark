@@ -34,7 +34,7 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 | AlphaCrystal | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
 
 ## Parameters and configuration for all algorithms.
-<img src="images/parameters.png" width="700">
+<img src="images/parameters.png" width="600">
 
 
 ## Details of the 180 benchmark crystals used in this work
