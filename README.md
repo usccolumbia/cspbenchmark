@@ -32,6 +32,10 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 | XtalOpt | 2011 | GA + DFT | Yes | [link](http://xtalopt.github.io/download.html) | C++ |
 | AlphaCrystal | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
 
+## Parameters and configuration for all algorithms.
+<img src="parameters.png" width="700">
+
+
 ## Details of the 180 benchmark crystals used in this work
 |material_id|pretty_formula|nsites|spacegroup|CrystalSystem|category|
 |:----|:----|:----|:----|:----|:----|
