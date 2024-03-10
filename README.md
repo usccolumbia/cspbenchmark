@@ -6,7 +6,6 @@ University of South Carolina.
 
 ## A summary of the main CSP softwares. 
 MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
-A summary of the main CSP softwares. MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 
 | Algorithm | Year | Category | Open-source | URL Link | Program Lang |
 |-----------|------|----------|-------------|----------|--------------|
@@ -24,4 +23,6 @@ A summary of the main CSP softwares. MLP: machine learning potentials; MOGA: mul
 | M3GNet | 2022 | Relax with MLP | Yes | [link](https://github.com/materialsvirtuallab/m3gnet) | Python |
 | ASLA | 2020 | NN + RL | No | [link](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.075427) | N/A |
 | CrySPY | 2023 | GA/BO + DFT | Yes | [link](https://tomoki-yamashita.github.io/CrySPY_doc/tutorial/random/#running-cryspy) | Python |
-| XtalOpt | 201
+| XtalOpt | 2011 | GA + DFT | Yes | [link](http://xtalopt.github.io/download.html) | C++ |
+| AlphaCrystal | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
+
