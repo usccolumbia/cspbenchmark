@@ -7,9 +7,9 @@ University of South Carolina.
 ## Performance comparison of CSP algorithms over all test structures
 We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>
 
-<img src="sp_crystalSystem.png" width="700">
+<img src="images/sp_crystalSystem.png" width="700">
 
-<img src="ranking_M3GNet.png" width="700">
+<img src="images/ranking_M3GNet.png" width="700">
 
 ## A summary of the main CSP softwares. 
 MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
@@ -34,7 +34,7 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 | AlphaCrystal | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
 
 ## Parameters and configuration for all algorithms.
-<img src="parameters.png" width="700">
+<img src="images/parameters.png" width="700">
 
 
 ## Details of the 180 benchmark crystals used in this work
