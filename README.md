@@ -4,6 +4,12 @@ Developed by Lai Wei and Dr. Jianjun Hu at <a href="http://mleg.cse.sc.edu" targ
 
 University of South Carolina.
 
+## Performance comparison of CSP algorithms over all test structures
+
+<img src="sp_crystalSystem.png" width="700">
+
+<img src="ranking_M3GNet.png" width="700">
+
 ## A summary of the main CSP softwares. 
 MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 
