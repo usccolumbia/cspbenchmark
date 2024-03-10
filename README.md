@@ -5,6 +5,7 @@ Developed by Lai Wei and Dr. Jianjun Hu at <a href="http://mleg.cse.sc.edu" targ
 University of South Carolina.
 
 ## Performance comparison of CSP algorithms over all test structures
+We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>
 
 <img src="sp_crystalSystem.png" width="700">
 
