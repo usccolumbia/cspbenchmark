@@ -11,6 +11,35 @@ We used Crystal Structure Prediction Performance Metrics from <a href="https://g
 
 <img src="images/ranking_M3GNet.png" width="700">
 
+## Metric distances of CSPML, ParetoCSP, AGOX-pt, CALYPSO and USPEX algorithms
+(ED: M3GNet Energy Distance (eV), HD: Hausdorff Distance (Å). Values highlighted in bold represent the minimum ED or HD computed from the predicted and ground truth structures for each test sample across various algorithms.
+|Algorithm|CSPML | |ParetoCSP| |AGOX-pt| |CALYPSO| |
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|Test Sample|ED|HD|ED|HD|ED|HD|ED|HD|
+|Ca3SnO|0.01|0.02|0.01|0.02|5.50|9.34|0.01|2.41|
+|CoNiSn|34.15|4.33|0.01|0.06|7.26|7.30|34.55|6.68|
+|CoTe|0.18|1.52|0.20|2.33|N/A|N/A|0.11|2.38|
+|Cr3Ga|31.78|2.79|0.12|1.62|11.95|6.62|16.13|4.07|
+|Hf2Ni|0.05|5.58|52.93|3.40|10.94|8.03|0.09|4.18|
+|HfCo2Sn|0.01|0.04|0.15|5.29|N/A|N/A|29.31|3.46|
+|HfMn2|0.03|0.15|59.73|5.53|19.92|7.21|116.21|5.04|
+|InHg|22.54|8.61|0.14|6.05|0.38|7.13|0.02|4.51|
+|Li2CuSn|0.44|0.12|0.05|5.51|N/A|N/A|13.14|3.54|
+|LiMg2Ga|0.00|0.03|0.13|4.48|N/A|N/A|8.60|5.33|
+|MgCu4Sn|0.04|0.09|0.51|2.74|5.65|8.83|67.92|5.34|
+|MgInCu4|0.06|3.07|0.47|3.69|5.92|9.65|20.48|7.26|
+|NaGa4|0.05|5.22|0.05|2.10|N/A|N/A|0.10|2.24|
+|ScCu|0.00|0.01|0.00|0.01|5.39|11.77|0.01|1.70|
+|SrGa4|0.02|5.43|0.05|2.27|N/A|N/A|15.76|6.41|
+|SrGaCu2|0.78|4.79|N/A|N/A|N/A|N/A|13.91|10.39|
+|Ti2Cd|16.18|2.04|N/A|N/A|7.49|9.34|16.66|3.57|
+|TiGa3|0.02|2.44|0.01|1.50|N/A|N/A|0.09|2.67|
+|YAl3|19.39|11.76|1.41|12.24|10.72|9.55|38.98|13.77|
+|YHg2|8.41|5.83|N/A|N/A|3.07|8.98|0.00|1.75|
+|ZnCdPt2|0.29|2.99|0.04|2.04|N/A|N/A|0.03|0.13|
+|ZnCO3|0.08|1.31|N/A|N/A|6.79|8.53|0.54|4.06|
+|ZrHg|9.16|2.69|0.06|2.15|N/A|N/A|9.21|2.30|
+
 ## A summary of the main CSP softwares. 
 MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
    * benchmarked in our study.
@@ -34,9 +63,9 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
 | XtalOpt | 2011 | GA + DFT | Yes | [link](http://xtalopt.github.io/download.html) | C++ |
 | AlphaCrystal* | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
 
-## Parameters and configuration for all algorithms.
-<img src="images/parameters.png" width="500">
 
+## Parameters and configuration for all algorithms.
+<img src="images/parameters1.png" width="500">
 
 ## Details of the 180 benchmark crystals used in this work
 |material_id|pretty_formula|nsites|spacegroup|CrystalSystem|category|
