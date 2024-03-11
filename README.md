@@ -41,8 +41,7 @@ We used Crystal Structure Prediction Performance Metrics from <a href="https://g
 |ZrHg|9.16|2.69|0.06|2.15|N/A|N/A|9.21|2.30|
 
 ## A summary of the main CSP softwares. 
-MLP: machine learning potentials; MOGA: multi-objective genetic algorithm;
-   * benchmarked in our study.
+MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* benchmarked in our study;
   
 | Algorithm | Year | Category | Open-source | URL Link | Program Lang |
 |-----------|------|----------|-------------|----------|--------------|
