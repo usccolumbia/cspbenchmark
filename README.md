@@ -1,18 +1,18 @@
 # CSPBenchmark: Benchmark of crystal structure prediction algorithms
 
-Developed by Lai Wei and Dr. Jianjun Hu at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>
+Developed by Lai Wei and Dr. Jianjun Hu at <a href="http://mleg.cse.sc.edu" target="_blank">Machine Learning and Evolution Laboratory</a>.
 
 University of South Carolina.
 
 ## Performance comparison of CSP algorithms over all test structures
-We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>
+We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>.
 
 <img src="images/sp_crystalSystem.png" width="700">
 
 <img src="images/ranking_M3GNet.png" width="700">
 
 ## Metric distances of CSPML, ParetoCSP, AGOX-pt, CALYPSO and USPEX algorithms
-(ED: M3GNet Energy Distance (eV), HD: Hausdorff Distance (Å). Values highlighted in bold represent the minimum ED or HD computed from the predicted and ground truth structures for each test sample across various algorithms.
+(ED: M3GNet Energy Distance (eV), HD: Hausdorff Distance (Å). Values highlighted in bold represent the minimum ED or HD computed from the predicted and ground truth structures for each test sample across various algorithms.)
 |Algorithm|CSPML | |ParetoCSP| |AGOX-pt| |CALYPSO| |
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|
 |Test Sample|ED|HD|ED|HD|ED|HD|ED|HD|
@@ -67,6 +67,8 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* be
 <img src="images/parameters1.png" width="500">
 
 ## Details of the 180 benchmark crystals used in this work
+You can download test data in data/CSPbenchmark_test_data.csv
+
 |material_id|pretty_formula|nsites|spacegroup|CrystalSystem|category|
 |:----|:----|:----|:----|:----|:----|
 |mp-557997|CaSeO3|20|14|Monoclinic|polymorph_ternary|
