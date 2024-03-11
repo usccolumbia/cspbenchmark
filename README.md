@@ -11,7 +11,7 @@ We used Crystal Structure Prediction Performance Metrics from <a href="https://g
 
 <img src="images/ranking_M3GNet.png" width="700">
 
-## Metric distances of CSPML, ParetoCSP, AGOX-pt, CALYPSO and USPEX algorithms
+## Metric distances of CSPML, ParetoCSP, AGOX-pt, and CALYPSO algorithms
 (ED: M3GNet Energy Distance (eV), HD: Hausdorff Distance (Å). Values highlighted in bold represent the minimum ED or HD computed from the predicted and ground truth structures for each test sample across various algorithms.)
 |Algorithm|CSPML | |ParetoCSP| |AGOX-pt| |CALYPSO| |
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|
