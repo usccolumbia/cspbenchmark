@@ -28,6 +28,7 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* be
 
 ## Performance comparison of CSP algorithms over all test structures
 We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>.
+Ranking scores calculation code are shwon in <code> folder.
 
 <img src="images/sp_crystalSystem.png" width="700">
 
