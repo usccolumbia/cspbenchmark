@@ -1,0 +1,3 @@
+[console_scripts]
+agox-analysis = agox.utils.batch_analysis:command_line_analysis
+agox-convert = agox.utils.convert_database:convert

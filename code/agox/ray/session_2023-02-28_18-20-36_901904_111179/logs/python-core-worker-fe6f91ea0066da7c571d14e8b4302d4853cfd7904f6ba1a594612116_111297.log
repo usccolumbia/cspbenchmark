@@ -1,0 +1,33 @@
+[2023-02-28 18:20:38,702 I 111297 111297] core_worker_process.cc:107: Constructing CoreWorkerProcess. pid: 111297
+[2023-02-28 18:20:38,704 I 111297 111297] grpc_server.cc:105: worker server started, listening on port 42241.
+[2023-02-28 18:20:38,709 I 111297 111297] core_worker.cc:185: Initializing worker at address: 10.173.98.51:42241, worker ID fe6f91ea0066da7c571d14e8b4302d4853cfd7904f6ba1a594612116, raylet da2cafdbdb5df3a82b60c398fa18e3ae8be2c4fb7f70c792dfdf1c30
+[2023-02-28 18:20:38,710 I 111297 111297] core_worker.cc:521: Adjusted worker niceness to 15
+[2023-02-28 18:20:38,710 I 111297 111297] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2023-02-28 18:20:38,710 I 111297 111371] core_worker.cc:476: Event stats:
+
+
+Global stats: 12 total (9 active)
+Queueing time: mean = 14.312 us, max = 61.601 us, min = 54.686 us, total = 171.741 us
+Execution time:  mean = 2.532 us, total = 30.381 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 6 total (3 active, 1 running), CPU time: mean = 5.064 us, total = 30.381 us
+	UNKNOWN - 2 total (2 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+
+
+[2023-02-28 18:20:38,712 I 111297 111371] accessor.cc:608: Received notification for node id = da2cafdbdb5df3a82b60c398fa18e3ae8be2c4fb7f70c792dfdf1c30, IsAlive = 1
+[2023-02-28 18:20:39,831 I 111297 111371] core_worker.cc:606: Exit signal received, this process will exit after all outstanding tasks have finished, exit_type=INTENDED_SYSTEM_EXIT
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:593: Disconnecting to the raylet.
+[2023-02-28 18:20:39,832 I 111297 111297] raylet_client.cc:163: RayletClient::Disconnect, exit_type=INTENDED_SYSTEM_EXIT, exit_detail=Worker exits because it was idle (it doesn't have objects it owns while no task or actor has been scheduled) for a long time., has creation_task_exception_pb_bytes=0
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:540: Shutting down a core worker.
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:564: Disconnecting a GCS client.
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:568: Waiting for joining a core worker io thread. If it hangs here, there might be deadlock or a high load in the core worker io service.
+[2023-02-28 18:20:39,832 I 111297 111371] core_worker.cc:691: Core worker main io service stopped.
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:577: Core worker ready to be deallocated.
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker_process.cc:240: Task execution loop terminated. Removing the global worker.
+[2023-02-28 18:20:39,832 I 111297 111297] core_worker.cc:531: Core worker is destructed
+[2023-02-28 18:20:39,970 I 111297 111297] core_worker_process.cc:144: Destructing CoreWorkerProcessImpl. pid: 111297
+[2023-02-28 18:20:39,970 I 111297 111297] io_service_pool.cc:47: IOServicePool is stopped.

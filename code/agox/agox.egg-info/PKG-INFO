@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: agox
+Version: 2.2.1
+Summary: Atomistic Global Optimziation X is a framework for structure optimization in materials science.
+Home-page: https://gitlab.com/agox/agox
+Requires-Python: >=3.5
+License-File: LICENSE.txt

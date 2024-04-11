@@ -1,0 +1,103 @@
+2023-02-21 17:14:48,239	INFO monitor.py:586 -- Starting monitor using ray installation: /home/sadman/Desktop/agox/agox_env/lib/python3.8/site-packages/ray/__init__.py
+2023-02-21 17:14:48,239	INFO monitor.py:587 -- Ray version: 2.0.0
+2023-02-21 17:14:48,239	INFO monitor.py:588 -- Ray commit: cba26cc83f6b5b8a2ff166594a65cb74c0ec8740
+2023-02-21 17:14:48,239	INFO monitor.py:589 -- Monitor started with command: ['/home/sadman/Desktop/agox/agox_env/lib/python3.8/site-packages/ray/autoscaler/_private/monitor.py', '--logs-dir=/home/sadman/Desktop/agox/ray/session_2023-02-21_17-14-46_511209_117043/logs', '--logging-rotate-bytes=536870912', '--logging-rotate-backup-count=5', '--gcs-address=10.173.98.51:55478', '--redis-password=5241590000000000', '--monitor-ip=10.173.98.51']
+2023-02-21 17:14:48,240	WARNING monitor.py:156 -- redis_password has been deprecated.
+2023-02-21 17:14:48,242	WARNING monitor.py:209 -- `prometheus_client` not found, so metrics will not be exported.
+2023-02-21 17:14:48,242	INFO monitor.py:213 -- Monitor: Started
+2023-02-21 17:14:48,261	INFO autoscaler.py:250 -- disable_node_updaters:False
+2023-02-21 17:14:48,261	INFO autoscaler.py:258 -- disable_launch_config_check:False
+2023-02-21 17:14:48,261	INFO autoscaler.py:270 -- foreground_node_launch:False
+2023-02-21 17:14:48,261	INFO autoscaler.py:280 -- worker_liveness_check:True
+2023-02-21 17:14:48,261	INFO autoscaler.py:288 -- worker_rpc_drain:True
+2023-02-21 17:14:48,262	INFO autoscaler.py:334 -- StandardAutoscaler: {'cluster_name': 'default', 'max_workers': 0, 'upscaling_speed': 1.0, 'docker': {}, 'idle_timeout_minutes': 0, 'provider': {'type': 'readonly', 'use_node_id_as_ip': True}, 'auth': {}, 'available_node_types': {'ray.head.default': {'resources': {}, 'node_config': {}, 'max_workers': 0}}, 'head_node_type': 'ray.head.default', 'file_mounts': {}, 'cluster_synced_files': [], 'file_mounts_sync_continuously': False, 'rsync_exclude': [], 'rsync_filter': [], 'initialization_commands': [], 'setup_commands': [], 'head_setup_commands': [], 'worker_setup_commands': [], 'head_start_ray_commands': [], 'worker_start_ray_commands': [], 'head_node': {}, 'worker_nodes': {}}
+2023-02-21 17:14:48,264	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-02-21 17:14:48.264836 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_918d0734280ead9ccf9c2928fb4bf8bd027bd0cbdf07a783d4f6068c
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-02-21 17:14:53,270	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-02-21 17:14:53.270692 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_918d0734280ead9ccf9c2928fb4bf8bd027bd0cbdf07a783d4f6068c
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-02-21 17:14:58,275	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-02-21 17:14:58.275572 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_918d0734280ead9ccf9c2928fb4bf8bd027bd0cbdf07a783d4f6068c
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-02-21 17:15:03,284	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-02-21 17:15:03.284059 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_918d0734280ead9ccf9c2928fb4bf8bd027bd0cbdf07a783d4f6068c
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-02-21 17:15:03,826	ERROR monitor.py:439 -- Error in monitor loop
+NoneType: None

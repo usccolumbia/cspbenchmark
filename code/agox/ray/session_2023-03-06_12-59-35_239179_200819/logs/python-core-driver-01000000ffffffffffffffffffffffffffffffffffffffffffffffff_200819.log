@@ -1,0 +1,338 @@
+[2023-03-06 12:59:36,366 I 200819 200819] core_worker_process.cc:107: Constructing CoreWorkerProcess. pid: 200819
+[2023-03-06 12:59:37,098 I 200819 200819] grpc_server.cc:105: driver server started, listening on port 42011.
+[2023-03-06 12:59:37,101 I 200819 200819] core_worker.cc:185: Initializing worker at address: 10.173.98.51:42011, worker ID 01000000ffffffffffffffffffffffffffffffffffffffffffffffff, raylet 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f
+[2023-03-06 12:59:37,102 I 200819 200819] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2023-03-06 12:59:37,102 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 11 total (7 active)
+Queueing time: mean = 14.352 us, max = 57.694 us, min = 19.043 us, total = 157.872 us
+Execution time:  mean = 9.450 us, total = 103.952 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 5 total (3 active, 1 running), CPU time: mean = 1.974 us, total = 9.872 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	UNKNOWN - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 77.037 us, total = 77.037 us
+
+
+[2023-03-06 12:59:37,103 I 200819 200936] accessor.cc:608: Received notification for node id = 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, IsAlive = 1
+[2023-03-06 12:59:37,124 I 200819 200819] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor ef8c9605f6f24a1bd993590c01000000
+[2023-03-06 12:59:37,124 I 200819 200819] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 2676452165dca8a267d0ca3d01000000
+[2023-03-06 12:59:37,125 I 200819 200819] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 049b3fd9cd013293d6de510001000000
+[2023-03-06 12:59:37,126 I 200819 200819] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 9c23f53934032b098b5882ad01000000
+[2023-03-06 12:59:37,126 I 200819 200819] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor c9ad0694d683b3cec58ff99c01000000
+[2023-03-06 12:59:38,357 I 200819 200936] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: ef8c9605f6f24a1bd993590c01000000, ip address: 10.173.98.51, port: 43957, worker_id: 8e861db5e59805b0abde6e85a128bc0387982c599363ebc10eb24ad3, raylet_id: 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-03-06 12:59:38,357 I 200819 200936] direct_actor_task_submitter.cc:229: Connecting to actor ef8c9605f6f24a1bd993590c01000000 at worker 8e861db5e59805b0abde6e85a128bc0387982c599363ebc10eb24ad3
+[2023-03-06 12:59:38,358 I 200819 200936] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 2676452165dca8a267d0ca3d01000000, ip address: 10.173.98.51, port: 37113, worker_id: 1d8ea39814fcfa51053b5317477de0b352540ae065ec88a0bb4d6397, raylet_id: 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-03-06 12:59:38,358 I 200819 200936] direct_actor_task_submitter.cc:229: Connecting to actor 2676452165dca8a267d0ca3d01000000 at worker 1d8ea39814fcfa51053b5317477de0b352540ae065ec88a0bb4d6397
+[2023-03-06 12:59:38,358 I 200819 200936] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 049b3fd9cd013293d6de510001000000, ip address: 10.173.98.51, port: 40299, worker_id: 3ad87c83288b9c705ca5517ff9a475efe2f0f49006d11894cbf8c780, raylet_id: 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-03-06 12:59:38,358 I 200819 200936] direct_actor_task_submitter.cc:229: Connecting to actor 049b3fd9cd013293d6de510001000000 at worker 3ad87c83288b9c705ca5517ff9a475efe2f0f49006d11894cbf8c780
+[2023-03-06 12:59:38,359 I 200819 200936] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 9c23f53934032b098b5882ad01000000, ip address: 10.173.98.51, port: 42847, worker_id: a5b7aa8136ad00f41f7ff98d8396f9059a6795fc3e74b1af46370b1e, raylet_id: 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-03-06 12:59:38,359 I 200819 200936] direct_actor_task_submitter.cc:229: Connecting to actor 9c23f53934032b098b5882ad01000000 at worker a5b7aa8136ad00f41f7ff98d8396f9059a6795fc3e74b1af46370b1e
+[2023-03-06 12:59:38,359 I 200819 200936] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: c9ad0694d683b3cec58ff99c01000000, ip address: 10.173.98.51, port: 44333, worker_id: e66fc8ab8cfb15c4cc3862afecc30d811e126a1f55e2b0809815c022, raylet_id: 1d6b867d98f833f4dd65b61583876a501a9e71e8ba0cb250d41eaf4f, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-03-06 12:59:38,359 I 200819 200936] direct_actor_task_submitter.cc:229: Connecting to actor c9ad0694d683b3cec58ff99c01000000 at worker e66fc8ab8cfb15c4cc3862afecc30d811e126a1f55e2b0809815c022
+[2023-03-06 12:59:47,111 W 200819 201074] metric_exporter.cc:207: [1] Export metrics to agent failed: GrpcUnknown: RPC Error message: Method not found!; RPC Error details: . This won't affect Ray, but you can lose metrics from the cluster.
+[2023-03-06 13:00:12,332 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000001e000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:00:22,291 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000002c000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:00:37,102 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 2665 total (7 active)
+Queueing time: mean = 33.453 us, max = 1.530 ms, min = -0.000 s, total = 89.152 ms
+Execution time:  mean = 50.112 us, total = 133.549 ms
+Event stats:
+	UNKNOWN - 662 total (4 active, 1 running), CPU time: mean = 21.634 us, total = 14.322 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 579 total (0 active), CPU time: mean = 62.645 us, total = 36.271 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 411 total (0 active), CPU time: mean = 14.395 us, total = 5.916 ms
+	CoreWorkerService.grpc_client.PushTask - 305 total (1 active), CPU time: mean = 63.243 us, total = 19.289 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 305 total (0 active), CPU time: mean = 109.347 us, total = 33.351 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 164 total (0 active), CPU time: mean = 53.850 us, total = 8.831 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 60 total (0 active), CPU time: mean = 10.229 us, total = 613.726 us
+	CoreWorker.deadline_timer.flush_profiling_events - 60 total (1 active), CPU time: mean = 106.199 us, total = 6.372 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 53 total (0 active), CPU time: mean = 35.036 us, total = 1.857 ms
+	StatsGcsService.grpc_client.AddProfileData - 29 total (0 active), CPU time: mean = 26.999 us, total = 782.971 us
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:01:11,054 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff0100000041000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:01:37,102 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 3839 total (7 active)
+Queueing time: mean = 33.501 us, max = 1.630 ms, min = -0.000 s, total = 128.610 ms
+Execution time:  mean = 45.622 us, total = 175.141 ms
+Event stats:
+	UNKNOWN - 1323 total (4 active, 1 running), CPU time: mean = 21.377 us, total = 28.282 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 714 total (0 active), CPU time: mean = 63.008 us, total = 44.988 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 500 total (0 active), CPU time: mean = 14.339 us, total = 7.170 ms
+	CoreWorkerService.grpc_client.PushTask - 355 total (1 active), CPU time: mean = 64.509 us, total = 22.901 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 355 total (0 active), CPU time: mean = 110.758 us, total = 39.319 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 210 total (0 active), CPU time: mean = 63.363 us, total = 13.306 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 120 total (0 active), CPU time: mean = 10.630 us, total = 1.276 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 120 total (1 active), CPU time: mean = 72.790 us, total = 8.735 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 67 total (0 active), CPU time: mean = 33.193 us, total = 2.224 ms
+	StatsGcsService.grpc_client.AddProfileData - 38 total (0 active), CPU time: mean = 26.267 us, total = 998.159 us
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:01:56,420 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000004d000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:01:56,421 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000004f000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:02:37,103 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 6033 total (11 active)
+Queueing time: mean = 37.069 us, max = 3.682 ms, min = -0.000 s, total = 223.639 ms
+Execution time:  mean = 45.883 us, total = 276.810 ms
+Event stats:
+	UNKNOWN - 1984 total (4 active, 1 running), CPU time: mean = 22.194 us, total = 44.032 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1215 total (0 active), CPU time: mean = 62.622 us, total = 76.086 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 822 total (0 active), CPU time: mean = 13.213 us, total = 10.861 ms
+	CoreWorkerService.grpc_client.PushTask - 527 total (5 active), CPU time: mean = 68.037 us, total = 35.855 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 527 total (0 active), CPU time: mean = 112.952 us, total = 59.526 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 383 total (0 active), CPU time: mean = 60.262 us, total = 23.080 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 180 total (0 active), CPU time: mean = 10.808 us, total = 1.945 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 180 total (1 active), CPU time: mean = 79.055 us, total = 14.230 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 116 total (0 active), CPU time: mean = 31.252 us, total = 3.625 ms
+	StatsGcsService.grpc_client.AddProfileData - 62 total (0 active), CPU time: mean = 26.224 us, total = 1.626 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:02:41,602 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff0100000077000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:02:41,604 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff0100000078000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:02:50,298 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000007d000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:03:37,103 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 7903 total (7 active)
+Queueing time: mean = 42.319 us, max = 11.848 ms, min = -0.000 s, total = 334.444 ms
+Execution time:  mean = 45.945 us, total = 363.105 ms
+Event stats:
+	UNKNOWN - 2645 total (4 active, 1 running), CPU time: mean = 22.794 us, total = 60.291 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1596 total (0 active), CPU time: mean = 64.354 us, total = 102.710 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1072 total (0 active), CPU time: mean = 12.914 us, total = 13.844 ms
+	CoreWorkerService.grpc_client.PushTask - 655 total (1 active), CPU time: mean = 70.312 us, total = 46.054 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 655 total (0 active), CPU time: mean = 113.632 us, total = 74.429 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 531 total (0 active), CPU time: mean = 58.976 us, total = 31.316 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 240 total (0 active), CPU time: mean = 11.052 us, total = 2.653 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 240 total (1 active), CPU time: mean = 77.410 us, total = 18.578 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 151 total (0 active), CPU time: mean = 34.215 us, total = 5.166 ms
+	StatsGcsService.grpc_client.AddProfileData - 81 total (0 active), CPU time: mean = 26.178 us, total = 2.120 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:03:54,522 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff0100000099000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:04:37,103 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 9307 total (7 active)
+Queueing time: mean = 44.620 us, max = 12.635 ms, min = -0.000 s, total = 415.281 ms
+Execution time:  mean = 46.471 us, total = 432.504 ms
+Event stats:
+	UNKNOWN - 3306 total (4 active, 1 running), CPU time: mean = 23.062 us, total = 76.244 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1818 total (0 active), CPU time: mean = 71.942 us, total = 130.791 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1217 total (0 active), CPU time: mean = 12.937 us, total = 15.744 ms
+	CoreWorkerService.grpc_client.PushTask - 730 total (1 active), CPU time: mean = 71.294 us, total = 52.045 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 730 total (0 active), CPU time: mean = 113.185 us, total = 82.625 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 602 total (0 active), CPU time: mean = 59.273 us, total = 35.682 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 300 total (0 active), CPU time: mean = 11.202 us, total = 3.361 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 300 total (1 active), CPU time: mean = 72.765 us, total = 21.830 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 172 total (0 active), CPU time: mean = 33.600 us, total = 5.779 ms
+	StatsGcsService.grpc_client.AddProfileData - 95 total (0 active), CPU time: mean = 25.911 us, total = 2.462 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:05:37,103 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 10088 total (7 active)
+Queueing time: mean = 43.077 us, max = 12.635 ms, min = -0.000 s, total = 434.565 ms
+Execution time:  mean = 44.379 us, total = 447.696 ms
+Event stats:
+	UNKNOWN - 3967 total (4 active, 1 running), CPU time: mean = 22.706 us, total = 90.075 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1818 total (0 active), CPU time: mean = 71.942 us, total = 130.791 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1217 total (0 active), CPU time: mean = 12.937 us, total = 15.744 ms
+	CoreWorkerService.grpc_client.PushTask - 730 total (1 active), CPU time: mean = 71.294 us, total = 52.045 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 730 total (0 active), CPU time: mean = 113.185 us, total = 82.625 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 602 total (0 active), CPU time: mean = 59.273 us, total = 35.682 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 360 total (0 active), CPU time: mean = 11.325 us, total = 4.077 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 360 total (1 active), CPU time: mean = 62.428 us, total = 22.474 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 172 total (0 active), CPU time: mean = 33.600 us, total = 5.779 ms
+	StatsGcsService.grpc_client.AddProfileData - 95 total (0 active), CPU time: mean = 25.911 us, total = 2.462 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:06:37,104 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 10869 total (7 active)
+Queueing time: mean = 41.798 us, max = 12.635 ms, min = -0.000 s, total = 454.305 ms
+Execution time:  mean = 42.594 us, total = 462.954 ms
+Event stats:
+	UNKNOWN - 4628 total (4 active, 1 running), CPU time: mean = 22.452 us, total = 103.910 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1818 total (0 active), CPU time: mean = 71.942 us, total = 130.791 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1217 total (0 active), CPU time: mean = 12.937 us, total = 15.744 ms
+	CoreWorkerService.grpc_client.PushTask - 730 total (1 active), CPU time: mean = 71.294 us, total = 52.045 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 730 total (0 active), CPU time: mean = 113.185 us, total = 82.625 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 602 total (0 active), CPU time: mean = 59.273 us, total = 35.682 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 420 total (0 active), CPU time: mean = 11.360 us, total = 4.771 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 420 total (1 active), CPU time: mean = 55.245 us, total = 23.203 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 172 total (0 active), CPU time: mean = 33.600 us, total = 5.779 ms
+	StatsGcsService.grpc_client.AddProfileData - 95 total (0 active), CPU time: mean = 25.911 us, total = 2.462 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:07:37,104 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 12073 total (6 active)
+Queueing time: mean = 40.288 us, max = 12.635 ms, min = -0.000 s, total = 486.395 ms
+Execution time:  mean = 41.846 us, total = 505.212 ms
+Event stats:
+	UNKNOWN - 5289 total (4 active, 1 running), CPU time: mean = 22.500 us, total = 119.001 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 1971 total (0 active), CPU time: mean = 71.551 us, total = 141.026 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1313 total (0 active), CPU time: mean = 12.783 us, total = 16.784 ms
+	CoreWorkerService.grpc_client.PushTask - 780 total (0 active), CPU time: mean = 71.710 us, total = 55.934 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 780 total (0 active), CPU time: mean = 113.063 us, total = 88.189 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 654 total (0 active), CPU time: mean = 59.258 us, total = 38.755 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 480 total (0 active), CPU time: mean = 11.416 us, total = 5.480 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 480 total (1 active), CPU time: mean = 52.659 us, total = 25.276 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 186 total (0 active), CPU time: mean = 33.183 us, total = 6.172 ms
+	StatsGcsService.grpc_client.AddProfileData - 103 total (0 active), CPU time: mean = 25.741 us, total = 2.651 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:08:10,872 W 200819 200936] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff01000000d9000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-03-06 13:08:37,104 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 14255 total (9 active)
+Queueing time: mean = 44.558 us, max = 19.986 ms, min = -0.000 s, total = 635.170 ms
+Execution time:  mean = 42.661 us, total = 608.139 ms
+Event stats:
+	UNKNOWN - 5949 total (4 active, 1 running), CPU time: mean = 23.064 us, total = 137.207 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 2455 total (0 active), CPU time: mean = 69.740 us, total = 171.211 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1634 total (0 active), CPU time: mean = 12.789 us, total = 20.898 ms
+	CoreWorkerService.grpc_client.PushTask - 955 total (3 active), CPU time: mean = 71.483 us, total = 68.266 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 955 total (0 active), CPU time: mean = 113.241 us, total = 108.145 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 824 total (0 active), CPU time: mean = 58.614 us, total = 48.298 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 540 total (0 active), CPU time: mean = 11.535 us, total = 6.229 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 540 total (1 active), CPU time: mean = 57.533 us, total = 31.068 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 235 total (0 active), CPU time: mean = 32.229 us, total = 7.574 ms
+	StatsGcsService.grpc_client.AddProfileData - 131 total (0 active), CPU time: mean = 25.200 us, total = 3.301 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+
+[2023-03-06 13:09:37,104 I 200819 200936] core_worker.cc:476: Event stats:
+
+
+Global stats: 15906 total (7 active)
+Queueing time: mean = 58.501 us, max = 137.607 ms, min = -0.000 s, total = 930.512 ms
+Execution time:  mean = 52.847 us, total = 840.592 ms
+Event stats:
+	UNKNOWN - 6610 total (4 active, 1 running), CPU time: mean = 23.254 us, total = 153.708 ms
+	CoreWorkerService.grpc_server.PubsubCommandBatch - 2753 total (0 active), CPU time: mean = 68.396 us, total = 188.295 ms
+	CoreWorkerService.grpc_server.PubsubLongPolling - 1834 total (0 active), CPU time: mean = 12.877 us, total = 23.616 ms
+	CoreWorkerService.grpc_client.PushTask - 1055 total (1 active), CPU time: mean = 71.613 us, total = 75.552 ms
+	CoreWorkerDirectActorTaskSubmitter::SubmitTask - 1055 total (0 active), CPU time: mean = 112.982 us, total = 119.196 ms
+	CoreWorkerService.grpc_server.UpdateObjectLocationBatch - 951 total (0 active), CPU time: mean = 57.464 us, total = 54.648 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 600 total (0 active), CPU time: mean = 11.555 us, total = 6.933 ms
+	CoreWorker.deadline_timer.flush_profiling_events - 600 total (1 active), CPU time: mean = 57.543 us, total = 34.526 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 263 total (0 active), CPU time: mean = 31.560 us, total = 8.300 ms
+	StatsGcsService.grpc_client.AddProfileData - 146 total (0 active), CPU time: mean = 25.107 us, total = 3.666 ms
+	ActorInfoGcsService.grpc_client.CreateActor - 5 total (0 active), CPU time: mean = 45.159 us, total = 225.797 us
+	CoreWorkerService.grpc_server.WaitForActorOutOfScope - 5 total (0 active), CPU time: mean = 14.076 us, total = 70.380 us
+	ActorInfoGcsService.grpc_client.RegisterActor - 5 total (0 active), CPU time: mean = 134.541 us, total = 672.703 us
+	ActorInfoGcsService.grpc_client.GetActorInfo - 5 total (0 active), CPU time: mean = 538.453 us, total = 2.692 ms
+	PeriodicalRunner.RunFnPeriodically - 5 total (0 active), CPU time: mean = 213.411 us, total = 1.067 ms
+	ActorCreator.AsyncRegisterActor - 5 total (0 active), CPU time: mean = 130.457 us, total = 652.283 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 4 total (0 active), CPU time: mean = 127.355 us, total = 509.420 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 2 total (1 active), CPU time: mean = 52.328 us, total = 104.657 us
+	CoreWorkerService.grpc_server.LocalGC - 1 total (0 active), CPU time: mean = 166.105 ms, total = 166.105 ms
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 17.043 us, total = 17.043 us
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 35.981 us, total = 35.981 us
+
+

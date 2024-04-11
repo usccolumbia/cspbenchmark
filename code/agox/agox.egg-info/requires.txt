@@ -1,0 +1,9 @@
+numpy>=1.22.0
+ase
+matplotlib
+cymem
+scikit-learn
+dscribe
+mpi4py
+ray==2.0.0
+jax

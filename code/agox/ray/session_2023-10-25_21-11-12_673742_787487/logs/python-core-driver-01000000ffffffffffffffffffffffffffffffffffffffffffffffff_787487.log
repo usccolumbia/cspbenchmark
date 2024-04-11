@@ -1,0 +1,48 @@
+[2023-10-25 21:11:14,245 I 787487 787487] core_worker_process.cc:107: Constructing CoreWorkerProcess. pid: 787487
+[2023-10-25 21:11:14,991 I 787487 787487] grpc_server.cc:105: driver server started, listening on port 45055.
+[2023-10-25 21:11:14,995 I 787487 787487] core_worker.cc:185: Initializing worker at address: 10.173.98.51:45055, worker ID 01000000ffffffffffffffffffffffffffffffffffffffffffffffff, raylet 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011
+[2023-10-25 21:11:14,997 I 787487 787609] accessor.cc:608: Received notification for node id = 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, IsAlive = 1
+[2023-10-25 21:11:14,997 I 787487 787609] core_worker.cc:476: Event stats:
+
+
+Global stats: 9 total (4 active)
+Queueing time: mean = 54.121 us, max = 126.549 us, min = 85.563 us, total = 487.086 us
+Execution time:  mean = 17.480 us, total = 157.319 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 3 total (1 active, 1 running), CPU time: mean = 4.269 us, total = 12.808 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 19.577 us, total = 19.577 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 82.697 us, total = 82.697 us
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 42.237 us, total = 42.237 us
+	UNKNOWN - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+
+
+[2023-10-25 21:11:14,997 I 787487 787487] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2023-10-25 21:11:15,019 I 787487 787487] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 59a120cd6cf55e6a3a6c13f001000000
+[2023-10-25 21:11:15,019 I 787487 787487] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 2a90af88b18d147495622ce201000000
+[2023-10-25 21:11:15,021 I 787487 787487] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 8fccfd3ac15e73a760ca83f701000000
+[2023-10-25 21:11:15,021 I 787487 787487] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 6135a9feb266756e3a7d938601000000
+[2023-10-25 21:11:15,021 I 787487 787487] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor 3f7268b6c493b86f4fc599ba01000000
+[2023-10-25 21:11:16,413 I 787487 787609] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 59a120cd6cf55e6a3a6c13f001000000, ip address: 10.173.98.51, port: 33399, worker_id: ba881eac7976ea139703b782750064e220843574f78eeeaa311cca97, raylet_id: 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-10-25 21:11:16,414 I 787487 787609] direct_actor_task_submitter.cc:229: Connecting to actor 59a120cd6cf55e6a3a6c13f001000000 at worker ba881eac7976ea139703b782750064e220843574f78eeeaa311cca97
+[2023-10-25 21:11:16,414 I 787487 787609] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 2a90af88b18d147495622ce201000000, ip address: 10.173.98.51, port: 41821, worker_id: 4e531e535b01fe79ed0c483454cf3ea097eabcddbfe107497a7dcc1c, raylet_id: 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-10-25 21:11:16,414 I 787487 787609] direct_actor_task_submitter.cc:229: Connecting to actor 2a90af88b18d147495622ce201000000 at worker 4e531e535b01fe79ed0c483454cf3ea097eabcddbfe107497a7dcc1c
+[2023-10-25 21:11:16,415 I 787487 787609] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 8fccfd3ac15e73a760ca83f701000000, ip address: 10.173.98.51, port: 35403, worker_id: 79393f58bb5fb7c10391d2378358a2d42a6cd87ba28bf1d2a68902c8, raylet_id: 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-10-25 21:11:16,415 I 787487 787609] direct_actor_task_submitter.cc:229: Connecting to actor 8fccfd3ac15e73a760ca83f701000000 at worker 79393f58bb5fb7c10391d2378358a2d42a6cd87ba28bf1d2a68902c8
+[2023-10-25 21:11:16,415 I 787487 787609] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 6135a9feb266756e3a7d938601000000, ip address: 10.173.98.51, port: 36197, worker_id: 53f0e35d08edd9e054b7233696f8fa10a23abbee6e07f10900b848aa, raylet_id: 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-10-25 21:11:16,416 I 787487 787609] direct_actor_task_submitter.cc:229: Connecting to actor 6135a9feb266756e3a7d938601000000 at worker 53f0e35d08edd9e054b7233696f8fa10a23abbee6e07f10900b848aa
+[2023-10-25 21:11:16,416 I 787487 787609] actor_manager.cc:214: received notification on actor, state: ALIVE, actor_id: 3f7268b6c493b86f4fc599ba01000000, ip address: 10.173.98.51, port: 46289, worker_id: 4a249638cecd3d1622f3e7281444254880bd198175ed56dd042ac3e8, raylet_id: 73be1e68e2f1bbec146d38c9408d82580bece71f63ccb1c96ca37011, num_restarts: 0, death context type=CONTEXT_NOT_SET
+[2023-10-25 21:11:16,416 I 787487 787609] direct_actor_task_submitter.cc:229: Connecting to actor 3f7268b6c493b86f4fc599ba01000000 at worker 4a249638cecd3d1622f3e7281444254880bd198175ed56dd042ac3e8
+[2023-10-25 21:11:25,009 W 787487 787745] metric_exporter.cc:207: [1] Export metrics to agent failed: GrpcUnknown: RPC Error message: Method not found!; RPC Error details: . This won't affect Ray, but you can lose metrics from the cluster.
+[2023-10-25 21:12:12,030 W 787487 787609] reference_count.cc:1444: Object locations requested for 00ffffffffffffffffffffffffffffffffffffff010000003c000000, but ref already removed. This may be a bug in the distributed reference counting protocol.
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:593: Disconnecting to the raylet.
+[2023-10-25 21:12:13,044 I 787487 787487] raylet_client.cc:163: RayletClient::Disconnect, exit_type=INTENDED_USER_EXIT, exit_detail=Shutdown by ray.shutdown()., has creation_task_exception_pb_bytes=0
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:540: Shutting down a core worker.
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:564: Disconnecting a GCS client.
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:568: Waiting for joining a core worker io thread. If it hangs here, there might be deadlock or a high load in the core worker io service.
+[2023-10-25 21:12:13,044 I 787487 787609] core_worker.cc:691: Core worker main io service stopped.
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:577: Core worker ready to be deallocated.
+[2023-10-25 21:12:13,044 I 787487 787487] core_worker.cc:531: Core worker is destructed
+[2023-10-25 21:12:13,050 I 787487 787487] core_worker_process.cc:144: Destructing CoreWorkerProcessImpl. pid: 787487
+[2023-10-25 21:12:13,050 I 787487 787487] io_service_pool.cc:47: IOServicePool is stopped.

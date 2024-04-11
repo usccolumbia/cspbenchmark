@@ -1,0 +1,368 @@
+2023-03-06 13:10:17,176	INFO monitor.py:586 -- Starting monitor using ray installation: /home/sadman/Desktop/agox/agox_env/lib/python3.8/site-packages/ray/__init__.py
+2023-03-06 13:10:17,176	INFO monitor.py:587 -- Ray version: 2.0.0
+2023-03-06 13:10:17,176	INFO monitor.py:588 -- Ray commit: cba26cc83f6b5b8a2ff166594a65cb74c0ec8740
+2023-03-06 13:10:17,176	INFO monitor.py:589 -- Monitor started with command: ['/home/sadman/Desktop/agox/agox_env/lib/python3.8/site-packages/ray/autoscaler/_private/monitor.py', '--logs-dir=/home/sadman/Desktop/agox/ray/session_2023-03-06_13-10-15_457324_201459/logs', '--logging-rotate-bytes=536870912', '--logging-rotate-backup-count=5', '--gcs-address=10.173.98.51:56062', '--redis-password=5241590000000000', '--monitor-ip=10.173.98.51']
+2023-03-06 13:10:17,177	WARNING monitor.py:156 -- redis_password has been deprecated.
+2023-03-06 13:10:17,187	WARNING monitor.py:209 -- `prometheus_client` not found, so metrics will not be exported.
+2023-03-06 13:10:17,188	INFO monitor.py:213 -- Monitor: Started
+2023-03-06 13:10:17,211	INFO autoscaler.py:250 -- disable_node_updaters:False
+2023-03-06 13:10:17,211	INFO autoscaler.py:258 -- disable_launch_config_check:False
+2023-03-06 13:10:17,211	INFO autoscaler.py:270 -- foreground_node_launch:False
+2023-03-06 13:10:17,212	INFO autoscaler.py:280 -- worker_liveness_check:True
+2023-03-06 13:10:17,212	INFO autoscaler.py:288 -- worker_rpc_drain:True
+2023-03-06 13:10:17,213	INFO autoscaler.py:334 -- StandardAutoscaler: {'cluster_name': 'default', 'max_workers': 0, 'upscaling_speed': 1.0, 'docker': {}, 'idle_timeout_minutes': 0, 'provider': {'type': 'readonly', 'use_node_id_as_ip': True}, 'auth': {}, 'available_node_types': {'ray.head.default': {'resources': {}, 'node_config': {}, 'max_workers': 0}}, 'head_node_type': 'ray.head.default', 'file_mounts': {}, 'cluster_synced_files': [], 'file_mounts_sync_continuously': False, 'rsync_exclude': [], 'rsync_filter': [], 'initialization_commands': [], 'setup_commands': [], 'head_setup_commands': [], 'worker_setup_commands': [], 'head_start_ray_commands': [], 'worker_start_ray_commands': [], 'head_node': {}, 'worker_nodes': {}}
+2023-03-06 13:10:17,216	INFO monitor.py:353 -- Autoscaler has not yet received load metrics. Waiting.
+2023-03-06 13:10:22,220	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:22.220573 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:27,229	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:27.229278 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:32,237	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:32.237218 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:37,244	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:37.244694 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:42,248	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:42.248604 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:47,257	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:47.257132 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:52,265	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:52.265390 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:10:57,276	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:10:57.275995 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:02,285	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:02.285367 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:07,293	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:07.293132 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:12,300	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:12.300489 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:17,305	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:17.305120 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:22,320	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:22.320490 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:27,326	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:27.326315 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:32,332	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:32.332803 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:37,342	INFO autoscaler.py:386 -- 
+======== Autoscaler status: 2023-03-06 13:11:37.342296 ========
+Node status
+---------------------------------------------------------------
+Healthy:
+ 1 node_0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/5.0 CPU
+ 0.0/1.0 GPU
+ 0.0/1.0 accelerator_type:K600
+ 0.00/9.313 GiB memory
+ 0.00/2.328 GiB object_store_memory
+
+Demands:
+ (no resource demands)
+2023-03-06 13:11:38,786	ERROR monitor.py:439 -- Error in monitor loop
+NoneType: None

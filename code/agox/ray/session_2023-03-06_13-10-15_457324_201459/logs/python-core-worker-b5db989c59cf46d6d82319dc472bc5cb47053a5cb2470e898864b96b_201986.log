@@ -1,0 +1,51 @@
+[2023-03-06 13:10:19,284 I 201986 201986] core_worker_process.cc:107: Constructing CoreWorkerProcess. pid: 201986
+[2023-03-06 13:10:19,303 I 201986 201986] grpc_server.cc:105: worker server started, listening on port 41243.
+[2023-03-06 13:10:19,307 I 201986 201986] core_worker.cc:185: Initializing worker at address: 10.173.98.51:41243, worker ID b5db989c59cf46d6d82319dc472bc5cb47053a5cb2470e898864b96b, raylet 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+[2023-03-06 13:10:19,309 I 201986 202033] core_worker.cc:476: Event stats:
+
+
+Global stats: 10 total (7 active)
+Queueing time: mean = 24.319 us, max = 207.988 us, min = 12.851 us, total = 243.189 us
+Execution time:  mean = 3.429 us, total = 34.292 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 4 total (1 active, 1 running), CPU time: mean = 8.573 us, total = 34.292 us
+	UNKNOWN - 2 total (2 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	CoreWorker.deadline_timer.flush_profiling_events - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+
+
+[2023-03-06 13:10:19,310 I 201986 201986] core_worker.cc:521: Adjusted worker niceness to 15
+[2023-03-06 13:10:19,310 I 201986 201986] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2023-03-06 13:10:19,315 I 201986 202033] accessor.cc:608: Received notification for node id = 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, IsAlive = 1
+[2023-03-06 13:10:19,321 I 201986 201986] direct_actor_task_submitter.cc:36: Set max pending calls to -1 for actor e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:19,321 I 201986 201986] direct_actor_task_submitter.cc:229: Connecting to actor e241f6feac38543efb42f1b901000000 at worker b5db989c59cf46d6d82319dc472bc5cb47053a5cb2470e898864b96b
+[2023-03-06 13:10:19,321 I 201986 201986] core_worker.cc:2239: Creating actor: e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:19,325 I 201986 201986] direct_actor_transport.cc:144: Actor creation task finished, task_id: ffffffffffffffffe241f6feac38543efb42f1b901000000, actor_id: e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:29,354 W 201986 202039] metric_exporter.cc:207: [1] Export metrics to agent failed: GrpcUnknown: RPC Error message: Method not found!; RPC Error details: . This won't affect Ray, but you can lose metrics from the cluster.
+[2023-03-06 13:11:19,310 I 201986 202033] core_worker.cc:476: Event stats:
+
+
+Global stats: 1238 total (7 active)
+Queueing time: mean = 91.056 us, max = 8.063 ms, min = -0.000 s, total = 112.727 ms
+Execution time:  mean = 40.696 us, total = 50.382 ms
+Event stats:
+	UNKNOWN - 723 total (5 active, 1 running), CPU time: mean = 24.191 us, total = 17.490 ms
+	CoreWorkerService.grpc_server.PushTask - 199 total (0 active), CPU time: mean = 53.549 us, total = 10.656 ms
+	CoreWorkerService.grpc_server.DirectActorCallArgWaitComplete - 96 total (0 active), CPU time: mean = 57.681 us, total = 5.537 ms
+	NodeManagerService.grpc_client.ReportWorkerBacklog - 60 total (0 active), CPU time: mean = 9.457 us, total = 567.434 us
+	CoreWorker.deadline_timer.flush_profiling_events - 60 total (1 active), CPU time: mean = 216.065 us, total = 12.964 ms
+	StatsGcsService.grpc_client.AddProfileData - 57 total (0 active), CPU time: mean = 26.134 us, total = 1.490 ms
+	NodeManagerService.grpc_client.PinObjectIDs - 33 total (0 active), CPU time: mean = 29.061 us, total = 959.012 us
+	PeriodicalRunner.RunFnPeriodically - 6 total (0 active), CPU time: mean = 82.390 us, total = 494.339 us
+	WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), CPU time: mean = 20.604 us, total = 20.604 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (0 active), CPU time: mean = 127.112 us, total = 127.112 us
+	InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	NodeInfoGcsService.grpc_client.GetAllNodeInfo - 1 total (0 active), CPU time: mean = 75.778 us, total = 75.778 us
+
+
+[2023-03-06 13:11:38,432 I 201986 202033] core_worker.cc:3028: Force kill actor request has received. exiting immediately... The actor is dead because its owner has died. Owner Id: 01000000ffffffffffffffffffffffffffffffffffffffffffffffff Owner Ip address: 10.173.98.51 Owner worker exit type: INTENDED_USER_EXIT Worker exit detail: Owner's worker process has crashed.
+[2023-03-06 13:11:38,432 W 201986 202033] core_worker.cc:671: Force exit the process.  Details: Worker exits because the actor is killed. The actor is dead because its owner has died. Owner Id: 01000000ffffffffffffffffffffffffffffffffffffffffffffffff Owner Ip address: 10.173.98.51 Owner worker exit type: INTENDED_USER_EXIT Worker exit detail: Owner's worker process has crashed.
+[2023-03-06 13:11:38,432 I 201986 202033] core_worker.cc:593: Disconnecting to the raylet.
+[2023-03-06 13:11:38,432 I 201986 202033] raylet_client.cc:163: RayletClient::Disconnect, exit_type=INTENDED_SYSTEM_EXIT, exit_detail=Worker exits because the actor is killed. The actor is dead because its owner has died. Owner Id: 01000000ffffffffffffffffffffffffffffffffffffffffffffffff Owner Ip address: 10.173.98.51 Owner worker exit type: INTENDED_USER_EXIT Worker exit detail: Owner's worker process has crashed., has creation_task_exception_pb_bytes=0

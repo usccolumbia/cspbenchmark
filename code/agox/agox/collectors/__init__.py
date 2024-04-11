@@ -1,0 +1,3 @@
+from agox.collectors.standard import StandardCollector
+from agox.collectors.ray_collector import ParallelCollector as OldParallelCollector
+from agox.collectors.ray_pool_collector import ParallelCollector

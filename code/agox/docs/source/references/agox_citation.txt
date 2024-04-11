@@ -1,0 +1,9 @@
+@article{Christiansen2022,
+	author = {Christiansen, Mads-Peter Verner and R\o{}nne, Nikolaj and Hammer, Bj\o{}rk},
+	journal = {TBD},
+	number = {TBD},
+	pages = {TBD},
+	title = {Atomistic Global Optimization X: A Python package for optimization of
+            atomistic structures},
+	volume = {TBD},
+	year = {2022}}

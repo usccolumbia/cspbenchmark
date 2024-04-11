@@ -1,0 +1,247 @@
+[2023-03-06 13:10:15,505 I 201495 201495] (gcs_server) io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_server.cc:59: GCS storage type is memory
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_init_data.cc:44: Loading job table data.
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_init_data.cc:56: Loading node table data.
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_init_data.cc:68: Loading cluster resources table data.
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_init_data.cc:95: Loading actor table data.
+[2023-03-06 13:10:15,506 I 201495 201495] (gcs_server) gcs_init_data.cc:108: Loading actor task spec table data.
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:81: Loading placement group table data.
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:48: Finished loading job table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:60: Finished loading node table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:72: Finished loading cluster resources table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:99: Finished loading actor table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:112: Finished loading actor task spec table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_init_data.cc:86: Finished loading placement group table data, size = 0
+[2023-03-06 13:10:15,507 I 201495 201495] (gcs_server) gcs_heartbeat_manager.cc:33: GcsHeartbeatManager start, num_heartbeats_timeout=30, initial_num_heartbeats_timeout=120
+[2023-03-06 13:10:15,510 I 201495 201495] (gcs_server) grpc_server.cc:105: GcsServer server started, listening on port 56062.
+[2023-03-06 13:10:15,517 I 201495 201495] (gcs_server) gcs_server.cc:186: GcsNodeManager: 
+- RegisterNode request count: 0
+- DrainNode request count: 0
+- GetAllNodeInfo request count: 0
+- GetInternalConfig request count: 0
+
+GcsActorManager: 
+- RegisterActor request count: 0
+- CreateActor request count: 0
+- GetActorInfo request count: 0
+- GetNamedActorInfo request count: 0
+- GetAllActorInfo request count: 0
+- KillActor request count: 0
+- ListNamedActors request count: 0
+- Registered actors count: 0
+- Destroyed actors count: 0
+- Named actors count: 0
+- Unresolved actors count: 0
+- Pending actors count: 0
+- Created actors count: 0
+- owners_: 0
+- actor_to_register_callbacks_: 0
+- actor_to_create_callbacks_: 0
+- sorted_destroyed_actor_list_: 0
+
+GcsResourceManager: 
+- GetResources request count: 0
+- GetAllAvailableResources request count0
+- ReportResourceUsage request count: 0
+- GetAllResourceUsage request count: 0
+
+GcsPlacementGroupManager: 
+- CreatePlacementGroup request count: 0
+- RemovePlacementGroup request count: 0
+- GetPlacementGroup request count: 0
+- GetAllPlacementGroup request count: 0
+- WaitPlacementGroupUntilReady request count: 0
+- GetNamedPlacementGroup request count: 0
+- Scheduling pending placement group count: 0
+- Registered placement groups count: 0
+- Named placement group count: 0
+- Pending placement groups count: 0
+- Infeasible placement groups count: 0
+
+GcsPublisher {}
+
+[runtime env manager] ID to URIs table:
+[runtime env manager] URIs reference table:
+
+GrpcBasedResourceBroadcaster:
+- Tracked nodes: 0
+[2023-03-06 13:10:15,518 I 201495 201495] (gcs_server) gcs_server.cc:723: Event stats:
+
+
+Global stats: 13 total (4 active)
+Queueing time: mean = 1.679 ms, max = 10.713 ms, min = 3.981 us, total = 21.825 ms
+Execution time:  mean = 835.865 us, total = 10.866 ms
+Event stats:
+	GcsInMemoryStore.GetAll - 6 total (0 active), CPU time: mean = 1.803 ms, total = 10.821 ms
+	PeriodicalRunner.RunFnPeriodically - 4 total (2 active, 1 running), CPU time: mean = 10.302 us, total = 41.207 us
+	RaySyncer.deadline_timer.report_resource_report - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	RayletLoadPulled - 1 total (1 active), CPU time: mean = 0.000 s, total = 0.000 s
+	GcsInMemoryStore.Put - 1 total (0 active), CPU time: mean = 4.261 us, total = 4.261 us
+
+
+[2023-03-06 13:10:17,582 I 201495 201495] (gcs_server) gcs_node_manager.cc:42: Registering node info, node id = 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, address = 10.173.98.51, node name = 10.173.98.51
+[2023-03-06 13:10:17,583 I 201495 201495] (gcs_server) gcs_node_manager.cc:48: Finished registering node info, node id = 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, address = 10.173.98.51, node name = 10.173.98.51
+[2023-03-06 13:10:17,583 I 201495 201495] (gcs_server) gcs_placement_group_manager.cc:737: A new node: 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 registered, will try to reschedule all the infeasible placement groups.
+[2023-03-06 13:10:17,586 I 201495 201495] (gcs_server) gcs_job_manager.cc:149: Getting all job info.
+[2023-03-06 13:10:17,586 I 201495 201495] (gcs_server) gcs_job_manager.cc:155: Finished getting all job info.
+[2023-03-06 13:10:18,477 I 201495 201495] (gcs_server) gcs_job_manager.cc:41: Adding job, job id = 01000000, driver pid = 201459
+[2023-03-06 13:10:18,477 I 201495 201495] (gcs_server) gcs_job_manager.cc:56: Finished adding job, job id = 01000000, driver pid = 201459
+[2023-03-06 13:10:18,505 I 201495 201495] (gcs_server) gcs_actor_manager.cc:235: Registering actor, job id = 01000000, actor id = e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:18,507 I 201495 201495] (gcs_server) gcs_actor_manager.cc:235: Registering actor, job id = 01000000, actor id = 3fd941e4f0cb3e0080e72ef901000000
+[2023-03-06 13:10:18,508 I 201495 201495] (gcs_server) gcs_actor_manager.cc:235: Registering actor, job id = 01000000, actor id = 0cb49ae89bd82e782685acba01000000
+[2023-03-06 13:10:18,508 I 201495 201495] (gcs_server) gcs_actor_manager.cc:241: Registered actor, job id = 01000000, actor id = e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:18,508 I 201495 201495] (gcs_server) gcs_actor_manager.cc:241: Registered actor, job id = 01000000, actor id = 3fd941e4f0cb3e0080e72ef901000000
+[2023-03-06 13:10:18,508 I 201495 201495] (gcs_server) gcs_actor_manager.cc:241: Registered actor, job id = 01000000, actor id = 0cb49ae89bd82e782685acba01000000
+[2023-03-06 13:10:18,515 I 201495 201495] (gcs_server) gcs_actor_manager.cc:235: Registering actor, job id = 01000000, actor id = 4ca1ef0b9143dc57f15a18f101000000
+[2023-03-06 13:10:18,515 I 201495 201495] (gcs_server) gcs_actor_manager.cc:241: Registered actor, job id = 01000000, actor id = 4ca1ef0b9143dc57f15a18f101000000
+[2023-03-06 13:10:18,516 I 201495 201495] (gcs_server) gcs_actor_manager.cc:235: Registering actor, job id = 01000000, actor id = 853f122a353ee92a6fcddcfa01000000
+[2023-03-06 13:10:18,516 I 201495 201495] (gcs_server) gcs_actor_manager.cc:260: Creating actor, job id = 01000000, actor id = e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:18,516 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:300: Start leasing worker from node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor e241f6feac38543efb42f1b901000000, job id = 01000000
+[2023-03-06 13:10:18,516 I 201495 201495] (gcs_server) gcs_actor_manager.cc:260: Creating actor, job id = 01000000, actor id = 3fd941e4f0cb3e0080e72ef901000000
+[2023-03-06 13:10:18,516 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:300: Start leasing worker from node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 3fd941e4f0cb3e0080e72ef901000000, job id = 01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_manager.cc:260: Creating actor, job id = 01000000, actor id = 0cb49ae89bd82e782685acba01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:300: Start leasing worker from node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 0cb49ae89bd82e782685acba01000000, job id = 01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_manager.cc:241: Registered actor, job id = 01000000, actor id = 853f122a353ee92a6fcddcfa01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_manager.cc:260: Creating actor, job id = 01000000, actor id = 4ca1ef0b9143dc57f15a18f101000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:300: Start leasing worker from node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 4ca1ef0b9143dc57f15a18f101000000, job id = 01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_manager.cc:260: Creating actor, job id = 01000000, actor id = 853f122a353ee92a6fcddcfa01000000
+[2023-03-06 13:10:18,517 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:300: Start leasing worker from node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 853f122a353ee92a6fcddcfa01000000, job id = 01000000
+[2023-03-06 13:10:19,313 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:614: Finished leasing worker from 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor e241f6feac38543efb42f1b901000000, job id = 01000000
+[2023-03-06 13:10:19,313 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:427: Start creating actor e241f6feac38543efb42f1b901000000 on worker b5db989c59cf46d6d82319dc472bc5cb47053a5cb2470e898864b96b at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,325 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:466: Succeeded in creating actor e241f6feac38543efb42f1b901000000 on worker b5db989c59cf46d6d82319dc472bc5cb47053a5cb2470e898864b96b at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,325 I 201495 201495] (gcs_server) gcs_actor_manager.cc:1166: Actor created successfully, actor id = e241f6feac38543efb42f1b901000000, job id = 01000000
+[2023-03-06 13:10:19,326 I 201495 201495] (gcs_server) gcs_actor_manager.cc:277: Finished creating actor, job id = 01000000, actor id = e241f6feac38543efb42f1b901000000
+[2023-03-06 13:10:19,328 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:614: Finished leasing worker from 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 4ca1ef0b9143dc57f15a18f101000000, job id = 01000000
+[2023-03-06 13:10:19,328 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:427: Start creating actor 4ca1ef0b9143dc57f15a18f101000000 on worker bbabf3e23a48d33aa17c8b0eb88a7eba63e10bafb4c2ee0f15391047 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,333 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:614: Finished leasing worker from 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 0cb49ae89bd82e782685acba01000000, job id = 01000000
+[2023-03-06 13:10:19,333 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:427: Start creating actor 0cb49ae89bd82e782685acba01000000 on worker 06d375dc58efbbd87d79478ae0b448ea17b5e7f0af711348fadb8909 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,338 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:466: Succeeded in creating actor 4ca1ef0b9143dc57f15a18f101000000 on worker bbabf3e23a48d33aa17c8b0eb88a7eba63e10bafb4c2ee0f15391047 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,338 I 201495 201495] (gcs_server) gcs_actor_manager.cc:1166: Actor created successfully, actor id = 4ca1ef0b9143dc57f15a18f101000000, job id = 01000000
+[2023-03-06 13:10:19,338 I 201495 201495] (gcs_server) gcs_actor_manager.cc:277: Finished creating actor, job id = 01000000, actor id = 4ca1ef0b9143dc57f15a18f101000000
+[2023-03-06 13:10:19,347 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:466: Succeeded in creating actor 0cb49ae89bd82e782685acba01000000 on worker 06d375dc58efbbd87d79478ae0b448ea17b5e7f0af711348fadb8909 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,347 I 201495 201495] (gcs_server) gcs_actor_manager.cc:1166: Actor created successfully, actor id = 0cb49ae89bd82e782685acba01000000, job id = 01000000
+[2023-03-06 13:10:19,347 I 201495 201495] (gcs_server) gcs_actor_manager.cc:277: Finished creating actor, job id = 01000000, actor id = 0cb49ae89bd82e782685acba01000000
+[2023-03-06 13:10:19,363 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:614: Finished leasing worker from 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 3fd941e4f0cb3e0080e72ef901000000, job id = 01000000
+[2023-03-06 13:10:19,363 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:427: Start creating actor 3fd941e4f0cb3e0080e72ef901000000 on worker 716c63039910f5b502d8463ec493a158d1ed8cb94decb82e02348e62 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,370 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:466: Succeeded in creating actor 3fd941e4f0cb3e0080e72ef901000000 on worker 716c63039910f5b502d8463ec493a158d1ed8cb94decb82e02348e62 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,370 I 201495 201495] (gcs_server) gcs_actor_manager.cc:1166: Actor created successfully, actor id = 3fd941e4f0cb3e0080e72ef901000000, job id = 01000000
+[2023-03-06 13:10:19,370 I 201495 201495] (gcs_server) gcs_actor_manager.cc:277: Finished creating actor, job id = 01000000, actor id = 3fd941e4f0cb3e0080e72ef901000000
+[2023-03-06 13:10:19,378 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:614: Finished leasing worker from 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 for actor 853f122a353ee92a6fcddcfa01000000, job id = 01000000
+[2023-03-06 13:10:19,378 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:427: Start creating actor 853f122a353ee92a6fcddcfa01000000 on worker 490628767c3e1846a9b5e0c167ac22aaa9f14e0ac32032798364a3d3 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,391 I 201495 201495] (gcs_server) gcs_actor_scheduler.cc:466: Succeeded in creating actor 853f122a353ee92a6fcddcfa01000000 on worker 490628767c3e1846a9b5e0c167ac22aaa9f14e0ac32032798364a3d3 at node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, job id = 01000000
+[2023-03-06 13:10:19,391 I 201495 201495] (gcs_server) gcs_actor_manager.cc:1166: Actor created successfully, actor id = 853f122a353ee92a6fcddcfa01000000, job id = 01000000
+[2023-03-06 13:10:19,391 I 201495 201495] (gcs_server) gcs_actor_manager.cc:277: Finished creating actor, job id = 01000000, actor id = 853f122a353ee92a6fcddcfa01000000
+[2023-03-06 13:10:25,547 W 201495 201499] (gcs_server) metric_exporter.cc:207: [1] Export metrics to agent failed: GrpcUnknown: RPC Error message: Method not found!; RPC Error details: . This won't affect Ray, but you can lose metrics from the cluster.
+[2023-03-06 13:11:15,518 I 201495 201495] (gcs_server) gcs_server.cc:186: GcsNodeManager: 
+- RegisterNode request count: 1
+- DrainNode request count: 0
+- GetAllNodeInfo request count: 26
+- GetInternalConfig request count: 1
+
+GcsActorManager: 
+- RegisterActor request count: 5
+- CreateActor request count: 5
+- GetActorInfo request count: 5
+- GetNamedActorInfo request count: 0
+- GetAllActorInfo request count: 0
+- KillActor request count: 0
+- ListNamedActors request count: 0
+- Registered actors count: 5
+- Destroyed actors count: 0
+- Named actors count: 0
+- Unresolved actors count: 0
+- Pending actors count: 0
+- Created actors count: 1
+- owners_: 1
+- actor_to_register_callbacks_: 0
+- actor_to_create_callbacks_: 0
+- sorted_destroyed_actor_list_: 0
+
+GcsResourceManager: 
+- GetResources request count: 0
+- GetAllAvailableResources request count0
+- ReportResourceUsage request count: 0
+- GetAllResourceUsage request count: 12
+
+GcsPlacementGroupManager: 
+- CreatePlacementGroup request count: 0
+- RemovePlacementGroup request count: 0
+- GetPlacementGroup request count: 0
+- GetAllPlacementGroup request count: 0
+- WaitPlacementGroupUntilReady request count: 0
+- GetNamedPlacementGroup request count: 0
+- Scheduling pending placement group count: 0
+- Registered placement groups count: 0
+- Named placement group count: 0
+- Pending placement groups count: 0
+- Infeasible placement groups count: 0
+
+GcsPublisher {}
+
+[runtime env manager] ID to URIs table:
+[runtime env manager] URIs reference table:
+
+GrpcBasedResourceBroadcaster:
+- Tracked nodes: 1
+[2023-03-06 13:11:15,518 I 201495 201495] (gcs_server) gcs_server.cc:723: Event stats:
+
+
+Global stats: 3632 total (9 active)
+Queueing time: mean = 55.883 us, max = 14.312 ms, min = -0.000 s, total = 202.969 ms
+Execution time:  mean = 41.468 us, total = 150.612 ms
+Event stats:
+	RaySyncer.deadline_timer.report_resource_report - 600 total (1 active), CPU time: mean = 29.043 us, total = 17.426 ms
+	NodeManagerService.grpc_client.RequestResourceReport - 568 total (0 active), CPU time: mean = 39.876 us, total = 22.650 ms
+	NodeManagerService.grpc_client.UpdateResourceUsage - 568 total (0 active), CPU time: mean = 14.349 us, total = 8.150 ms
+	ResourceUpdate - 568 total (0 active), CPU time: mean = 19.482 us, total = 11.066 ms
+	GcsInMemoryStore.Put - 402 total (0 active), CPU time: mean = 58.825 us, total = 23.648 ms
+	StatsGcsService.grpc_server.AddProfileData - 328 total (0 active), CPU time: mean = 73.973 us, total = 24.263 ms
+	GcsInMemoryStore.Get - 169 total (0 active), CPU time: mean = 41.524 us, total = 7.018 ms
+	InternalKVGcsService.grpc_server.InternalKVGet - 168 total (0 active), CPU time: mean = 13.512 us, total = 2.270 ms
+	RayletLoadPulled - 60 total (1 active), CPU time: mean = 134.026 us, total = 8.042 ms
+	NodeManagerService.grpc_client.GetResourceLoad - 57 total (0 active), CPU time: mean = 16.697 us, total = 951.720 us
+	InternalKVGcsService.grpc_server.InternalKVPut - 35 total (0 active), CPU time: mean = 15.258 us, total = 534.024 us
+	NodeInfoGcsService.grpc_server.GetAllNodeInfo - 26 total (0 active), CPU time: mean = 50.748 us, total = 1.319 ms
+	NodeResourceInfoGcsService.grpc_server.GetAllResourceUsage - 12 total (0 active), CPU time: mean = 78.601 us, total = 943.214 us
+	WorkerInfoGcsService.grpc_server.AddWorkerInfo - 11 total (0 active), CPU time: mean = 22.041 us, total = 242.453 us
+	GcsInMemoryStore.GetAll - 7 total (0 active), CPU time: mean = 1.551 ms, total = 10.860 ms
+	GCSServer.deadline_timer.debug_state_dump - 6 total (1 active), CPU time: mean = 681.962 us, total = 4.092 ms
+	CoreWorkerService.grpc_client.WaitForActorOutOfScope - 5 total (5 active), CPU time: mean = 0.000 s, total = 0.000 s
+	ActorInfoGcsService.grpc_server.GetActorInfo - 5 total (0 active), CPU time: mean = 43.152 us, total = 215.761 us
+	CoreWorkerService.grpc_client.PushTask - 5 total (0 active), CPU time: mean = 273.415 us, total = 1.367 ms
+	WorkerInfoGcsService.grpc_server.ReportWorkerFailure - 5 total (0 active), CPU time: mean = 22.553 us, total = 112.764 us
+	ActorInfoGcsService.grpc_server.CreateActor - 5 total (0 active), CPU time: mean = 173.324 us, total = 866.622 us
+	NodeManagerService.grpc_client.RequestWorkerLease - 5 total (0 active), CPU time: mean = 253.989 us, total = 1.270 ms
+	ActorInfoGcsService.grpc_server.RegisterActor - 5 total (0 active), CPU time: mean = 517.700 us, total = 2.589 ms
+	PeriodicalRunner.RunFnPeriodically - 4 total (0 active), CPU time: mean = 86.848 us, total = 347.393 us
+	JobInfoGcsService.grpc_server.AddJob - 1 total (0 active), CPU time: mean = 53.249 us, total = 53.249 us
+	InternalKVGcsService.grpc_server.InternalKVDel - 1 total (0 active), CPU time: mean = 34.130 us, total = 34.130 us
+	JobInfoGcsService.grpc_server.GetAllJobInfo - 1 total (0 active), CPU time: mean = 30.119 us, total = 30.119 us
+	GCSServer.deadline_timer.debug_state_event_stats_print - 1 total (1 active, 1 running), CPU time: mean = 0.000 s, total = 0.000 s
+	GcsInMemoryStore.Delete - 1 total (0 active), CPU time: mean = 93.260 us, total = 93.260 us
+	JobInfoGcsService.grpc_server.GetNextJobID - 1 total (0 active), CPU time: mean = 57.322 us, total = 57.322 us
+	NodeInfoGcsService.grpc_server.RegisterNode - 1 total (0 active), CPU time: mean = 72.210 us, total = 72.210 us
+	NodeInfoGcsService.grpc_server.GetInternalConfig - 1 total (0 active), CPU time: mean = 30.012 us, total = 30.012 us
+
+
+[2023-03-06 13:11:38,430 I 201495 201495] (gcs_server) gcs_actor_manager.cc:741: Destroying actor, actor id = 4ca1ef0b9143dc57f15a18f101000000, job id = 01000000
+[2023-03-06 13:11:38,431 I 201495 201495] (gcs_server) gcs_actor_manager.cc:741: Destroying actor, actor id = e241f6feac38543efb42f1b901000000, job id = 01000000
+[2023-03-06 13:11:38,432 I 201495 201495] (gcs_server) gcs_actor_manager.cc:741: Destroying actor, actor id = 0cb49ae89bd82e782685acba01000000, job id = 01000000
+[2023-03-06 13:11:38,433 I 201495 201495] (gcs_server) gcs_actor_manager.cc:741: Destroying actor, actor id = 3fd941e4f0cb3e0080e72ef901000000, job id = 01000000
+[2023-03-06 13:11:38,433 I 201495 201495] (gcs_server) gcs_actor_manager.cc:741: Destroying actor, actor id = 853f122a353ee92a6fcddcfa01000000, job id = 01000000
+[2023-03-06 13:11:38,435 I 201495 201495] (gcs_server) gcs_job_manager.cc:86: Finished marking job state, job id = 01000000
+[2023-03-06 13:11:38,436 W 201495 201495] (gcs_server) gcs_server.cc:395: The GCS actor metadata garbage collector timer failed to fire. This could old actor metadata not being properly cleaned up. For more information, check logs/gcs_server.err and logs/gcs_server.out
+[2023-03-06 13:11:38,441 I 201495 201495] (gcs_server) gcs_actor_manager.cc:719: Worker 01000000ffffffffffffffffffffffffffffffffffffffffffffffff failed, destroying actor child, job id = 01000000
+[2023-03-06 13:11:38,441 I 201495 201495] (gcs_server) gcs_actor_manager.cc:719: Worker 01000000ffffffffffffffffffffffffffffffffffffffffffffffff failed, destroying actor child, job id = 01000000
+[2023-03-06 13:11:38,441 I 201495 201495] (gcs_server) gcs_actor_manager.cc:719: Worker 01000000ffffffffffffffffffffffffffffffffffffffffffffffff failed, destroying actor child, job id = 01000000
+[2023-03-06 13:11:38,441 I 201495 201495] (gcs_server) gcs_actor_manager.cc:719: Worker 01000000ffffffffffffffffffffffffffffffffffffffffffffffff failed, destroying actor child, job id = 01000000
+[2023-03-06 13:11:38,441 I 201495 201495] (gcs_server) gcs_actor_manager.cc:719: Worker 01000000ffffffffffffffffffffffffffffffffffffffffffffffff failed, destroying actor child, job id = 01000000
+[2023-03-06 13:11:38,557 I 201495 201495] (gcs_server) gcs_node_manager.cc:68: Draining node info, node id = 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5
+[2023-03-06 13:11:38,558 I 201495 201495] (gcs_server) gcs_node_manager.cc:199: Removing node, node id = 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5, node name = 10.173.98.51
+[2023-03-06 13:11:38,558 I 201495 201495] (gcs_server) gcs_placement_group_manager.cc:712: Node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 failed, rescheduling the placement groups on the dead node.
+[2023-03-06 13:11:38,558 I 201495 201495] (gcs_server) gcs_actor_manager.cc:970: Node 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 failed, reconstructing actors.
+[2023-03-06 13:11:38,634 I 201495 201495] (gcs_server) gcs_node_manager.cc:123: Raylet 0372458b5f2456ecd673c8cc36ae5c18ce9e5739a886ee214b6609a5 is drained. Status GrpcUnavailable: RPC Error message: Socket closed; RPC Error details: . The information will be published to the cluster.
+[2023-03-06 13:11:38,671 I 201495 201495] (gcs_server) gcs_server_main.cc:100: GCS server received SIGTERM, shutting down...
+[2023-03-06 13:11:38,671 I 201495 201495] (gcs_server) gcs_server.cc:202: Stopping GCS server.
+[2023-03-06 13:11:38,678 I 201495 201495] (gcs_server) gcs_server.cc:223: GCS server stopped.
+[2023-03-06 13:11:38,678 I 201495 201495] (gcs_server) io_service_pool.cc:47: IOServicePool is stopped.
