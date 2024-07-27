@@ -4,6 +4,10 @@ Developed by Lai Wei and Dr. Jianjun Hu at <a href="http://mleg.cse.sc.edu" targ
 
 University of South Carolina.
 
+Citing our paper: Wei, Lai, Sadman Sadeed Omee, Rongzhi Dong, Nihang Fu, Yuqi Song, Edirisuriya Siriwardane, Meiling Xu, Chris Wolverton, and Jianjun Hu. "CSPBench: a benchmark and critical evaluation of Crystal Structure Prediction." arXiv preprint arXiv:2407.00733 (2024). [paper](https://arxiv.org/abs/2407.00733)
+
+
+
 ## A summary of the main CSP softwares. 
 MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* benchmarked in our study;
   
