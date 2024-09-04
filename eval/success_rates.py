@@ -49,7 +49,7 @@ def pmd(structure1, structure2):
 
 def get_spacegroup(s):
     try:
-        analyzer = SpacegroupAnalyzer(s)
+        analyzer = SpacegroupAnalyzer(s, symprec=0.1)
         space_group = analyzer.get_space_group_number()
     except:
         space_group = 'None'
