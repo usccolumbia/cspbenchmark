@@ -99,7 +99,7 @@ You can download test data in data/CSPbenchmark_test_data.csv
 | mp-454      | NaGa4             | 5               | 139        | Tetragonal    | binary_hard               |
 | mp-1827     | SrGa4             | 5               | 139        | Tetragonal    | binary_hard               |
 | mp-2129     | Nd2Ge4            | 6               | 141        | Tetragonal    | binary_hard               |
-| mp-30682    | ZrGa              | 8               | 141        | Tetragonal    | binary_hard               |
+| mp-30682    | Zr4Ga4              | 8               | 141        | Tetragonal    | binary_hard               |
 | mp-2128     | Sn8Pd2            | 10              | 68         | Orthorhombic  | binary_hard               |
 | mp-1208467  | Tb8Al2            | 10              | 227        | Cubic         | binary_hard               |
 | mp-640079   | Mn9Au3            | 12              | 123        | Tetragonal    | binary_hard               |
@@ -108,7 +108,7 @@ You can download test data in data/CSPbenchmark_test_data.csv
 | mp-30497    | TbCd2             | 3               | 191        | Hexagonal     | binary_medium             |
 | mp-30725    | YHg2              | 3               | 191        | Hexagonal     | binary_medium             |
 | mp-2731     | TiGa3             | 4               | 139        | Tetragonal    | binary_medium             |
-| mp-2510     | ZrHg              | 4               | 123        | Tetragonal    | binary_medium             |
+| mp-2510     | Zr2Hg2              | 4               | 123        | Tetragonal    | binary_medium             |
 | mp-2740     | ErCo5             | 6               | 191        | Hexagonal     | binary_medium             |
 | mp-570875   | Ga4Os2            | 6               | 70         | Orthorhombic  | binary_medium             |
 | mp-861      | Hf4Ni2            | 6               | 140        | Tetragonal    | binary_medium             |
@@ -210,7 +210,7 @@ You can download test data in data/CSPbenchmark_test_data.csv
 | mp-1106068  | LaCr4Cu3O12       | 20              | 204        | Cubic         | template-based_quartenary |
 | mp-1105674  | Mg4Be2B4Ir10      | 20              | 127        | Tetragonal    | template-based_quartenary |
 | mp-1105109  | PrCu3Ru4O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1105290  | Co3Sb4O6F6        | 38              | 217        | Cubic         | template-based_quartenary |
+| mp-1105290  | Co6Sb8O12F12        | 38              | 217        | Cubic         | template-based_quartenary |
 | mp-1114630  | Rb3PrCl6          | 10              | 225        | Cubic         | template-based_ternary    |
 | mp-1105802  | Ca4Ge8Pt4         | 16              | 71         | Orthorhombic  | template-based_ternary    |
 | mp-1106406  | Ce4Sn2S10         | 16              | 55         | Orthorhombic  | template-based_ternary    |
