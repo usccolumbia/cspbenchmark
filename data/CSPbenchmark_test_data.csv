@@ -39,7 +39,7 @@ mp-30580,SrGaCu2,SrGaCu2,SrGaCu2,4,166,3,Cu Ga Sr,Trigonal,ternary_medium
 mp-30555,TaGaCo2,TaGaCo2,TaGaCo2,4,225,3,Co Ga Ta,Cubic,ternary_easy
 mp-2731,TiGa3,TiGa3,TiGa3,4,139,2,Ga Ti,Tetragonal,binary_medium
 mp-30493,ZnCdPt2,ZnCdPt2,ZnCdPt2,4,123,3,Cd Pt Zn,Tetragonal,ternary_medium
-mp-2510,ZrHg,ZrHg,ZrHg,4,123,2,Hg Zr,Tetragonal,binary_medium
+mp-2510,Zr2Hg2,Zr2Hg2,ZrHg,4,123,2,Hg Zr,Tetragonal,binary_medium
 mp-552674,ZrTaNO,ZrTaNO,ZrTaNO,4,187,4,N O Ta Zr,Hexagonal,quaternary_easy
 mp-29241,Ca3SnO,Ca3SnO,Ca3SnO,5,221,3,Ca O Sn,Cubic,ternary_easy
 mp-9570,CaCd2P2,CaCd2P2,CaCd2P2,5,164,3,Ca Cd P,Trigonal,ternary_medium
