@@ -34,7 +34,7 @@ mp-4972,LuInCu2,Lu4In4Cu8,LuInCu2,4,225,3,Cu In Lu,Cubic,ternary_easy
 mp-5181,LuSnPd2,Lu4Sn4Pd8,LuSnPd2,4,225,3,Lu Pd Sn,Cubic,ternary_easy
 mp-568382,Mn2Bi2,Mn2Bi2,MnBi,4,194,2,Mn Bi,Hexagonal,polymorph_binary
 mp-20389,Na2CdPb,Na8Cd4Pb4,Na2CdPb,4,216,3,Cd Na Pb,Cubic,ternary_easy
-mp-1004,Nb3Si,Sr3Ga3Cu6,Nb3Si,4,221,2,Nb Si,Cubic,polymorph_binary
+mp-1004,Nb3Si,Nb3Si,Nb3Si,4,221,2,Nb Si,Cubic,polymorph_binary
 mp-30580,SrGaCu2,Sr3Ga3Cu6,SrGaCu2,4,166,3,Cu Ga Sr,Trigonal,ternary_medium
 mp-30555,TaGaCo2,Ta4Ga4Co8,TaGaCo2,4,225,3,Co Ga Ta,Cubic,ternary_easy
 mp-2731,TiGa3,Ti2Ga6,TiGa3,4,139,2,Ga Ti,Tetragonal,binary_medium
