@@ -137,7 +137,7 @@ mp-1104454,Ta4GaTe4Se4,Ta16Ga4Te16Se16,Ta4GaTe4Se4,13,216,4,Ga Se Ta Te,Cubic,te
 mp-12570,ThB12,Th4B48,ThB12,13,225,2,B Th,Cubic,binary_easy
 mp-1103888,YbB12,Yb4B48,YbB12,13,225,2,B Yb,Cubic,template-based_binary
 mp-9705,Ba4NaB3N6,Ba8Na2B6N12,Ba4NaB3N6,14,229,4,B Ba N Na,Cubic,quaternary_easy
-mp-476,Ge6N8,Ge4N32,Ge3N4,14,227,2,Ge N,Cubic,polymorph_binary
+mp-476,Ge6N8,Ge24N32,Ge3N4,14,227,2,Ge N,Cubic,polymorph_binary
 mp-14466,KLi6IrO6,K3Li18Ir3O18,KLi6IrO6,14,166,4,Ir K Li O,Trigonal,quartenary_hard
 mp-1105001,Tm6Pt8,Tm18Pt24,Tm3Pt4,14,148,2,Pt Tm,Trigonal,template-based_binary
 mp-1104457,Eu9Au6,Eu27Au18,Eu3Au2,15,148,2,Au Eu,Trigonal,template-based_binary
