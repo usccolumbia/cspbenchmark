@@ -116,12 +116,4 @@ You can download the whold test data in data/CSPbenchmark_test_data.csv
 | mp-2128     | Sn8Pd2            | Sn16Pd4      | Sn4Pd          |     10 |         68 |         2 | Pd Sn         | Orthorhombic  | binary_hard   |
 | mp-1208467  | Tb8Al2            | Tb32Al8      | Tb4Al          |     10 |        227 |         2 | Al Tb         | Cubic         | binary_hard   |
 | mp-640079   | Mn9Au3            | Mn9Au3       | Mn3Au          |     12 |        123 |         2 | Au Mn         | Tetragonal    | binary_hard   |
-| mp-5452     | CeCu2Si2          | 5               | 139        | Tetragonal    | ternary_medium            |
-| mp-3147     | ErSi2Au2          | 5               | 139        | Tetragonal    | ternary_medium            |
-| mp-13405    | LuMn2Ge2          | 5               | 139        | Tetragonal    | ternary_medium            |
-| mp-30805    | SrNiSn3           | 5               | 107        | Tetragonal    | ternary_medium            |
-| mp-5615     | Ca3Ag3As3         | 9               | 189        | Hexagonal     | ternary_medium            |
-| mp-30733    | Ho3Sn3Pt3         | 9               | 189        | Hexagonal     | ternary_medium            |
-| mp-16747    | Lu3Ag3Pb3         | 9               | 189        | Hexagonal     | ternary_medium            |
-| mp-9812     | Zn2C2O6           | 10              | 167        | Trigonal      | ternary_medium            |
 ## 
