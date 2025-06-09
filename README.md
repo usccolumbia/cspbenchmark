@@ -73,185 +73,49 @@ Ranking scores calculation code are shwon in the code folder <a href="https://gi
 
 ## Parameters and configuration for all algorithms.
 <img src="images/conf1.png" width="450">
-<img src="images/conf2.png" width="450">
+<img src="images/conf2.png" width="500">
 
 ## Details of the 180 benchmark crystals used in this work
-You can download test data in data/CSPbenchmark_test_data.csv
+You can download the whold test data in data/CSPbenchmark_test_data.csv
 
-| Material id | Primitive formula | Number of sites | Spacegroup | CrystalSystem | Category                  |
-|-------------|-------------------|-----------------|------------|---------------|---------------------------|
-| mp-2334     | DyCu              | 2               | 221        | Cubic         | binary_easy               |
-| mp-2226     | DyPd              | 2               | 221        | Cubic         | binary_easy               |
-| mp-1121     | GaCo              | 2               | 221        | Cubic         | binary_easy               |
-| mp-2735     | PaO               | 2               | 225        | Cubic         | binary_easy               |
-| mp-1169     | ScCu              | 2               | 221        | Cubic         | binary_easy               |
-| mp-30746    | YIr               | 2               | 221        | Cubic         | binary_easy               |
-| mp-24658    | SmH2              | 3               | 225        | Cubic         | binary_easy               |
-| mp-20225    | CePb3             | 4               | 221        | Cubic         | binary_easy               |
-| mp-788      | Co2Te2            | 4               | 194        | Hexagonal     | binary_easy               |
-| mp-20176    | DyPb3             | 4               | 221        | Cubic         | binary_easy               |
-| mp-1231     | Cr6Ga2            | 8               | 223        | Cubic         | binary_easy               |
-| mp-12570    | ThB12             | 13              | 225        | Cubic         | binary_easy               |
-| mp-13452    | BePd2             | 3               | 139        | Tetragonal    | binary_hard               |
-| mp-11359    | Ga2Cu             | 3               | 123        | Tetragonal    | binary_hard               |
-| mp-1995     | PrC2              | 3               | 139        | Tetragonal    | binary_hard               |
-| mp-30501    | Ti2Cd             | 3               | 139        | Tetragonal    | binary_hard               |
-| mp-30789    | U2Mo              | 3               | 139        | Tetragonal    | binary_hard               |
-| mp-454      | NaGa4             | 5               | 139        | Tetragonal    | binary_hard               |
-| mp-1827     | SrGa4             | 5               | 139        | Tetragonal    | binary_hard               |
-| mp-2129     | Nd2Ge4            | 6               | 141        | Tetragonal    | binary_hard               |
-| mp-30682    | Zr4Ga4              | 8               | 141        | Tetragonal    | binary_hard               |
-| mp-2128     | Sn8Pd2            | 10              | 68         | Orthorhombic  | binary_hard               |
-| mp-1208467  | Tb8Al2            | 10              | 227        | Cubic         | binary_hard               |
-| mp-640079   | Mn9Au3            | 12              | 123        | Tetragonal    | binary_hard               |
-| mp-20132    | InHg              | 2               | 166        | Trigonal      | binary_medium             |
-| mp-2209     | CeGa2             | 3               | 191        | Hexagonal     | binary_medium             |
-| mp-30497    | TbCd2             | 3               | 191        | Hexagonal     | binary_medium             |
-| mp-30725    | YHg2              | 3               | 191        | Hexagonal     | binary_medium             |
-| mp-2731     | TiGa3             | 4               | 139        | Tetragonal    | binary_medium             |
-| mp-2510     | Zr2Hg2              | 4               | 123        | Tetragonal    | binary_medium             |
-| mp-2740     | ErCo5             | 6               | 191        | Hexagonal     | binary_medium             |
-| mp-570875   | Ga4Os2            | 6               | 70         | Orthorhombic  | binary_medium             |
-| mp-861      | Hf4Ni2            | 6               | 140        | Tetragonal    | binary_medium             |
-| mp-1566     | SmFe5             | 6               | 191        | Hexagonal     | binary_medium             |
-| mp-2387     | Th4Zn2            | 6               | 140        | Tetragonal    | binary_medium             |
-| mp-1607     | YbCu5             | 6               | 191        | Hexagonal     | binary_medium             |
-| mp-8882     | Ga2P2             | 4               | 186        | Hexagonal     | polymorph_binary          |
-| mp-13181    | LaF3              | 4               | 225        | Cubic         | polymorph_binary          |
-| mp-568382   | Mn2Bi2            | 4               | 194        | Hexagonal     | polymorph_binary          |
-| mp-1004     | Nb3Si             | 4               | 221        | Cubic         | polymorph_binary          |
-| mp-2067     | Th2Ga4            | 6               | 141        | Tetragonal    | polymorph_binary          |
-| mp-2178     | Yb2Ga4            | 6               | 194        | Hexagonal     | polymorph_binary          |
-| mp-11251    | Mg6Au2            | 8               | 194        | Hexagonal     | polymorph_binary          |
-| mp-9761     | Re2O6             | 8               | 182        | Hexagonal     | polymorph_binary          |
-| mp-2231     | Sn4S4             | 8               | 62         | Orthorhombic  | polymorph_binary          |
-| mp-11449    | Hf4Mn8            | 12              | 194        | Hexagonal     | polymorph_binary          |
-| mp-2451     | Y3Al9             | 12              | 166        | Trigonal      | polymorph_binary          |
-| mp-476      | Ge6N8             | 14              | 227        | Cubic         | polymorph_binary          |
-| mp-23127    | Ba2BiSbO6         | 10              | 12         | Monoclinic    | polymorph_quartenary      |
-| mp-10731    | Ba2PrSbO6         | 10              | 225        | Cubic         | polymorph_quartenary      |
-| mp-9349     | KRb2ScF6          | 10              | 225        | Cubic         | polymorph_quartenary      |
-| mp-1080753  | NaPb2IO6          | 10              | 225        | Cubic         | polymorph_quartenary      |
-| mp-550722   | Ba2Tl2CuO6        | 11              | 139        | Tetragonal    | polymorph_quartenary      |
-| mp-6628     | CsCdN3O6          | 11              | 146        | Trigonal      | polymorph_quartenary      |
-| mp-1095437  | Lu2Se2O6F2        | 12              | 11         | Monoclinic    | polymorph_quartenary      |
-| mp-726253   | RbLi3S2O9         | 15              | 1          | Triclinic     | polymorph_quartenary      |
-| mp-23667    | Rb2P2H4O8         | 16              | 43         | Orthorhombic  | polymorph_quartenary      |
-| mp-2233097  | MgV4SnO12         | 18              | 5          | Monoclinic    | polymorph_quartenary      |
-| mp-1105110  | Sr4Bi4Se6O4       | 18              | 14         | Monoclinic    | polymorph_quartenary      |
-| mp-23125    | K6Na2Fe2Cl12      | 22              | 167        | Trigonal      | polymorph_quartenary      |
-| c           | Li2NiO2           | 5               | 71         | Orthorhombic  | polymorph_ternary         |
-| mp-13171    | Y3Mg3Cu3          | 9               | 189        | Hexagonal     | polymorph_ternary         |
-| mp-19227    | Y2Mn2O6           | 10              | 194        | Hexagonal     | polymorph_ternary         |
-| mp-7550     | Ce2Nb2O8          | 12              | 15         | Monoclinic    | polymorph_ternary         |
-| mp-11658    | Cu4Sn2Se6         | 12              | 9          | Monoclinic    | polymorph_ternary         |
-| mp-23550    | K2Br2F8           | 12              | 140        | Tetragonal    | polymorph_ternary         |
-| mp-12931    | Sm2Ta2O8          | 12              | 13         | Monoclinic    | polymorph_ternary         |
-| mp-19418    | V2Cr2O8           | 12              | 63         | Orthorhombic  | polymorph_ternary         |
-| mp-7913     | Be4Si4N8          | 16              | 33         | Orthorhombic  | polymorph_ternary         |
-| mp-557997   | Ca4Se4O12         | 20              | 14         | Monoclinic    | polymorph_ternary         |
-| mp-27450    | K4Cu4Cl12         | 20              | 14         | Monoclinic    | polymorph_ternary         |
-| mp-5126     | Zn4S4O16          | 24              | 62         | Orthorhombic  | polymorph_ternary         |
-| mp-545788   | Ba3ZnN2O          | 7               | 123        | Tetragonal    | quartenary_hard           |
-| mp-18745    | La2Mn2Sb2O2       | 8               | 129        | Tetragonal    | quartenary_hard           |
-| mp-12515    | La2Zn2Sb2O2       | 8               | 129        | Tetragonal    | quartenary_hard           |
-| mp-20349    | Sm2Fe2As2O2       | 8               | 129        | Tetragonal    | quartenary_hard           |
-| mp-19118    | BaNd2CoO5         | 9               | 71         | Orthorhombic  | quartenary_hard           |
-| mp-21348    | Ba2EuTaO6         | 10              | 87         | Tetragonal    | quartenary_hard           |
-| mp-13356    | Ba2SrTeO6         | 10              | 148        | Trigonal      | quartenary_hard           |
-| mp-9666     | K4Na2Ga2P4        | 12              | 72         | Orthorhombic  | quartenary_hard           |
-| mp-23126    | KAs4IO6           | 12              | 191        | Hexagonal     | quartenary_hard           |
-| mp-14466    | KLi6IrO6          | 14              | 166        | Trigonal      | quartenary_hard           |
-| mp-651268   | Fe2Cu6SnS8        | 17              | 115        | Tetragonal    | quartenary_hard           |
-| mp-13383    | Sc2Ag2P4Se12      | 20              | 163        | Trigonal      | quartenary_hard           |
-| mp-6258     | CeCr2Si2C         | 6               | 123        | Tetragonal    | quartenary_medium         |
-| mp-6794     | LaB2Rh2C          | 6               | 139        | Tetragonal    | quartenary_medium         |
-| mp-6140     | PrNi2B2C          | 6               | 139        | Tetragonal    | quartenary_medium         |
-| mp-546790   | La2Cu2Te2O2       | 8               | 129        | Tetragonal    | quartenary_medium         |
-| mp-20807    | Sr2Fe2As2F2       | 8               | 129        | Tetragonal    | quartenary_medium         |
-| mp-6231     | Ba2ErSbO6         | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-19751    | Ba2YbNbO6         | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-15888    | Ba2YIrO6          | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-6428     | Ba2YRuO6          | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-19274    | BaPrMn2O6         | 10              | 123        | Tetragonal    | quartenary_medium         |
-| mp-6586     | K2NaAlF6          | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-24412    | K2NaAlH6          | 10              | 225        | Cubic         | quartenary_medium         |
-| mp-1213726  | CrFeCoSi          | 4               | 216        | Cubic         | quaternary_easy           |
-| mp-7554     | LiMgSnAu          | 4               | 216        | Cubic         | quaternary_easy           |
-| mp-11806    | LiMgSnPt          | 4               | 216        | Cubic         | quaternary_easy           |
-| mp-552674   | ZrTaNO            | 4               | 187        | Hexagonal     | quaternary_easy           |
-| mp-1071272  | CeAl2BRu2         | 6               | 123        | Tetragonal    | quaternary_easy           |
-| mp-13287    | Ba2Cu2Te2F2       | 8               | 129        | Tetragonal    | quaternary_easy           |
-| mp-12444    | Sr2Cu2S2F2        | 8               | 129        | Tetragonal    | quaternary_easy           |
-| mp-19093    | Ba2UNiO6          | 10              | 225        | Cubic         | quaternary_easy           |
-| mp-1111671  | K2LiInF6          | 10              | 225        | Cubic         | quaternary_easy           |
-| mp-6686     | K2NaInF6          | 10              | 225        | Cubic         | quaternary_easy           |
-| mp-16307    | Sr2MgIrO6         | 10              | 225        | Cubic         | quaternary_easy           |
-| mp-9705     | Ba4NaB3N6         | 14              | 229        | Cubic         | quaternary_easy           |
-| mp-1071835  | Dy2Cu4            | 6               | 74         | Orthorhombic  | template-based_binary     |
-| mp-1102067  | Pu4Sn8            | 12              | 141        | Tetragonal    | template-based_binary     |
-| mp-1102049  | Ta3Be9            | 12              | 166        | Trigonal      | template-based_binary     |
-| mp-1102936  | Ta8Fe4            | 12              | 193        | Hexagonal     | template-based_binary     |
-| mp-1095641  | Tb5S7             | 12              | 12         | Monoclinic    | template-based_binary     |
-| mp-1103888  | YbB12             | 13              | 225        | Cubic         | template-based_binary     |
-| mp-1105001  | Tm6Pt8            | 14              | 148        | Trigonal      | template-based_binary     |
-| mp-1104457  | Eu9Au6            | 15              | 148        | Trigonal      | template-based_binary     |
-| mp-1104286  | Ge12Rh3           | 15              | 152        | Trigonal      | template-based_binary     |
-| mp-1106395  | Pr12Ir4           | 16              | 62         | Orthorhombic  | template-based_binary     |
-| mp-1105958  | Yb12Co4           | 16              | 62         | Orthorhombic  | template-based_binary     |
-| mp-1190213  | Re4B16            | 20              | 194        | Hexagonal     | template-based_binary     |
-| mp-1111927  | K2LiCrF6          | 10              | 225        | Cubic         | template-based_quartenary |
-| mp-1104454  | Ta4GaTe4Se4       | 13              | 216        | Cubic         | template-based_quartenary |
-| mp-1106310  | Cu4Si2Hg2S8       | 16              | 31         | Orthorhombic  | template-based_quartenary |
-| mp-1105386  | Yb2H6C2N6         | 16              | 176        | Hexagonal     | template-based_quartenary |
-| mp-1106402  | Rb4Ti2O2F10       | 18              | 63         | Orthorhombic  | template-based_quartenary |
-| mp-1106325  | CaCu3Pt4O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1106150  | CeMn4Cu3O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1106004  | HoFe4Cu3O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1106068  | LaCr4Cu3O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1105674  | Mg4Be2B4Ir10      | 20              | 127        | Tetragonal    | template-based_quartenary |
-| mp-1105109  | PrCu3Ru4O12       | 20              | 204        | Cubic         | template-based_quartenary |
-| mp-1105290  | Co6Sb8O12F12        | 38              | 217        | Cubic         | template-based_quartenary |
-| mp-1114630  | Rb3PrCl6          | 10              | 225        | Cubic         | template-based_ternary    |
-| mp-1105802  | Ca4Ge8Pt4         | 16              | 71         | Orthorhombic  | template-based_ternary    |
-| mp-1106406  | Ce4Sn2S10         | 16              | 55         | Orthorhombic  | template-based_ternary    |
-| mp-1106349  | Sm2Pd6S8          | 16              | 223        | Cubic         | template-based_ternary    |
-| mp-1106327  | Co4NiSb12         | 17              | 204        | Cubic         | template-based_ternary    |
-| mp-1106064  | Ho4Ga12Ni         | 17              | 229        | Cubic         | template-based_ternary    |
-| mp-1106196  | Lu4Ga12Ni         | 17              | 229        | Cubic         | template-based_ternary    |
-| mp-1106117  | La10Ag2Pb6        | 18              | 193        | Hexagonal     | template-based_ternary    |
-| mp-1106245  | Zr10Al2Sb6        | 18              | 193        | Hexagonal     | template-based_ternary    |
-| mp-1105955  | Er6Cu6Sb8         | 20              | 220        | Cubic         | template-based_ternary    |
-| mp-1105893  | La6Cu6Bi8         | 20              | 220        | Cubic         | template-based_ternary    |
-| mp-1105777  | U6Sb8Ir6          | 20              | 220        | Cubic         | template-based_ternary    |
-| mp-11390    | LiGaSi            | 3               | 216        | Cubic         | ternary_easy              |
-| mp-4552     | ErInCu2           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-20730    | HfCo2Sn           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-21211    | InFeCo2           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-30591    | Li2CuSn           | 4               | 216        | Cubic         | ternary_easy              |
-| mp-30648    | LiMg2Ga           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-4972     | LuInCu2           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-5181     | LuSnPd2           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-20389    | Na2CdPb           | 4               | 216        | Cubic         | ternary_easy              |
-| mp-30555    | TaGaCo2           | 4               | 225        | Cubic         | ternary_easy              |
-| mp-29241    | Ca3SnO            | 5               | 221        | Cubic         | ternary_easy              |
-| mp-20237    | Co2Ni2Sn2         | 6               | 194        | Hexagonal     | ternary_easy              |
-| mp-12743    | CrTe4Au           | 6               | 10         | Monoclinic    | ternary_hard              |
-| mp-3676     | MgCu4Sn           | 6               | 216        | Cubic         | ternary_hard              |
-| mp-30587    | MgInCu4           | 6               | 216        | Cubic         | ternary_hard              |
-| mp-7524     | Nb2P2Se2          | 6               | 71         | Orthorhombic  | ternary_hard              |
-| mp-11533    | ZrZnNi4           | 6               | 216        | Cubic         | ternary_hard              |
-| mp-11435    | ErTi2Ga4          | 7               | 139        | Tetragonal    | ternary_hard              |
-| mp-7095     | Ce2Co2Si4         | 8               | 63         | Orthorhombic  | ternary_hard              |
-| mp-7489     | CsUF6             | 8               | 148        | Trigonal      | ternary_hard              |
-| mp-11396    | Nd2Ga4Ni2         | 8               | 65         | Orthorhombic  | ternary_hard              |
-| mp-29225    | Al4Cu2O7          | 13              | 216        | Cubic         | ternary_hard              |
-| mp-23520    | In2Pb4I10         | 16              | 140        | Tetragonal    | ternary_hard              |
-| mp-19140    | K3MnO4            | 32              | 121        | Tetragonal    | ternary_hard              |
-| mp-4326     | KErS2             | 4               | 166        | Trigonal      | ternary_medium            |
-| mp-30580    | SrGaCu2           | 4               | 166        | Trigonal      | ternary_medium            |
-| mp-30493    | ZnCdPt2           | 4               | 123        | Tetragonal    | ternary_medium            |
-| mp-9570     | CaCd2P2           | 5               | 164        | Trigonal      | ternary_medium            |
+| material_id | primitive_formula | full_formula | pretty_formula | nsites | spacegroup | nelements | elements_list | CrystalSystem | category      |
+|-------------|-------------------|--------------|----------------|--------|------------|-----------|---------------|---------------|---------------|
+| mp-2334     | DyCu              | DyCu         | DyCu           |      2 |        221 |         2 | Cu Dy         | Cubic         | binary_easy   |
+| mp-2226     | DyPd              | DyPd         | DyPd           |      2 |        221 |         2 | Dy Pd         | Cubic         | binary_easy   |
+| mp-1121     | GaCo              | GaCo         | GaCo           |      2 |        221 |         2 | Co Ga         | Cubic         | binary_easy   |
+| mp-2735     | PaO               | Pa4O4        | PaO            |      2 |        225 |         2 | O Pa          | Cubic         | binary_easy   |
+| mp-1169     | ScCu              | ScCu         | ScCu           |      2 |        221 |         2 | Cu Sc         | Cubic         | binary_easy   |
+| mp-30746    | YIr               | YIr          | YIr            |      2 |        221 |         2 | Ir Y          | Cubic         | binary_easy   |
+| mp-24658    | SmH2              | Sm4H8        | SmH2           |      3 |        225 |         2 | H Sm          | Cubic         | binary_easy   |
+| mp-20225    | CePb3             | CePb3        | CePb3          |      4 |        221 |         2 | Ce Pb         | Cubic         | binary_easy   |
+| mp-788      | Co2Te2            | Co2Te2       | CoTe           |      4 |        194 |         2 | Co Te         | Hexagonal     | binary_easy   |
+| mp-20176    | DyPb3             | DyPb3        | DyPb3          |      4 |        221 |         2 | Dy Pb         | Cubic         | binary_easy   |
+| mp-1231     | Cr6Ga2            | Cr6Ga2       | Cr3Ga          |      8 |        223 |         2 | Cr Ga         | Cubic         | binary_easy   |
+| mp-12570    | ThB12             | Th4B48       | ThB12          |     13 |        225 |         2 | B Th          | Cubic         | binary_easy   |
+| mp-20132    | InHg              | In3Hg3       | InHg           |      2 |        166 |         2 | Hg In         | Trigonal      | binary_medium |
+| mp-2209     | CeGa2             | CeGa2        | CeGa2          |      3 |        191 |         2 | Ce Ga         | Hexagonal     | binary_medium |
+| mp-30497    | TbCd2             | TbCd2        | TbCd2          |      3 |        191 |         2 | Cd Tb         | Hexagonal     | binary_medium |
+| mp-30725    | YHg2              | YHg2         | YHg2           |      3 |        191 |         2 | Hg Y          | Hexagonal     | binary_medium |
+| mp-2731     | TiGa3             | Ti2Ga6       | TiGa3          |      4 |        139 |         2 | Ga Ti         | Tetragonal    | binary_medium |
+| mp-2510     | ZrHg              | ZrHg         | ZrHg           |      4 |        123 |         2 | Hg Zr         | Tetragonal    | binary_medium |
+| mp-2740     | ErCo5             | ErCo5        | ErCo5          |      6 |        191 |         2 | Co Er         | Hexagonal     | binary_medium |
+| mp-570875   | Ga4Os2            | Ga16Os8      | Ga2Os          |      6 |         70 |         2 | Ga Os         | Orthorhombic  | binary_medium |
+| mp-861      | Hf4Ni2            | Hf8Ni4       | Hf2Ni          |      6 |        140 |         2 | Hf Ni         | Tetragonal    | binary_medium |
+| mp-1566     | SmFe5             | SmFe5        | SmFe5          |      6 |        191 |         2 | Fe Sm         | Hexagonal     | binary_medium |
+| mp-2387     | Th4Zn2            | Th8Zn4       | Th2Zn          |      6 |        140 |         2 | Th Zn         | Tetragonal    | binary_medium |
+| mp-1607     | YbCu5             | YbCu5        | YbCu5          |      6 |        191 |         2 | Cu Yb         | Hexagonal     | binary_medium |
+| mp-13452    | BePd2             | Be2Pd4       | BePd2          |      3 |        139 |         2 | Be Pd         | Tetragonal    | binary_hard   |
+| mp-11359    | Ga2Cu             | Ga2Cu        | Ga2Cu          |      3 |        123 |         2 | Cu Ga         | Tetragonal    | binary_hard   |
+| mp-1995     | PrC2              | Pr2C4        | PrC2           |      3 |        139 |         2 | C Pr          | Tetragonal    | binary_hard   |
+| mp-30501    | Ti2Cd             | Ti4Cd2       | Ti2Cd          |      3 |        139 |         2 | Cd Ti         | Tetragonal    | binary_hard   |
+| mp-30789    | U2Mo              | U4Mo2        | U2Mo           |      3 |        139 |         2 | Mo U          | Tetragonal    | binary_hard   |
+| mp-454      | NaGa4             | Na2Ga8       | NaGa4          |      5 |        139 |         2 | Ga Na         | Tetragonal    | binary_hard   |
+| mp-1827     | SrGa4             | Sr2Ga8       | SrGa4          |      5 |        139 |         2 | Ga Sr         | Tetragonal    | binary_hard   |
+| mp-2129     | Nd2Ge4            | Nd4Ge8       | NdGe2          |      6 |        141 |         2 | Ge Nd         | Tetragonal    | binary_hard   |
+| mp-30682    | ZrGa              | Zr8Ga8       | ZrGa           |      8 |        141 |         2 | Ga Zr         | Tetragonal    | binary_hard   |
+| mp-2128     | Sn8Pd2            | Sn16Pd4      | Sn4Pd          |     10 |         68 |         2 | Pd Sn         | Orthorhombic  | binary_hard   |
+| mp-1208467  | Tb8Al2            | Tb32Al8      | Tb4Al          |     10 |        227 |         2 | Al Tb         | Cubic         | binary_hard   |
+| mp-640079   | Mn9Au3            | Mn9Au3       | Mn3Au          |     12 |        123 |         2 | Au Mn         | Tetragonal    | binary_hard   |
 | mp-5452     | CeCu2Si2          | 5               | 139        | Tetragonal    | ternary_medium            |
 | mp-3147     | ErSi2Au2          | 5               | 139        | Tetragonal    | ternary_medium            |
 | mp-13405    | LuMn2Ge2          | 5               | 139        | Tetragonal    | ternary_medium            |
