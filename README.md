@@ -30,10 +30,19 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* be
 | XtalOpt | 2011 | GA + DFT | Yes | [link](http://xtalopt.github.io/download.html) | C++ |
 | AlphaCrystal* | 2023 | GA + DL | Yes | [link](https://github.com/usccolumbia/AlphaCrystal) | Python |
 
-## Performance comparison of CSP algorithms over all test structures
+## Evaluation metrics of CSP algorithms over all test structures
 We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>.
 
 Ranking scores calculation code are shwon in the code folder <a href="https://github.com/usccolumbia/cspbenchmark/blob/main/eval/ranking_calculator.py" target="_blank">Ranking calculator</a>.
+
+The ranking and scoring logic is designed to be robust to missing data and to handle ties gracefully.
+
+1.  **Data Cleaning**: Input values are sanitized. Strings like `"N/A"`, `"nan"`, and empty values, as well as numeric sentinels (e.g., `5555`, `9999`), are treated as infinitely large distances.
+2.  **Dense Ranking**: Distances are ranked from smallest to largest. If multiple algorithms have the same distance for a material, they receive the same rank. The next rank is then incremented by the number of tied items.
+    -   *Example*: For distances `[0.1, 0.2, 0.2, 0.3]`, the corresponding ranks would be `[1, 2, 2, 4]`.
+3.  **Score Calculation**: Scores are scaled linearly from 100 (for the best rank) to 0. In the case of a tie, the scores for the tied ranks are averaged. Any algorithm with an invalid distance automatically receives a score of 0.
+
+## space group and M3GNet ranking comparison of CSP algorithms over all test structures
 
 <img src="images/space_group.png" width="700">
 
@@ -78,6 +87,16 @@ Ranking scores calculation code are shwon in the code folder <a href="https://gi
 ## Details of the 180 benchmark crystals used in this work
 You can download the whold test data in data/CSPbenchmark_test_data.csv
 
+The dataset provides two key representations of the chemical formula, and it's important to understand their distinction:
+
+* **`primitive_formula`**: This is the simplest chemical formula, representing the smallest integer ratio of elements in the crystal. It is also known as the **empirical formula**.
+* **`full_formula`**: This represents the actual number of atoms for each element found within the standard **crystallographic unit cell**. The unit cell is the basic repeating structural block of a crystal.
+
+For example, looking at the material `mp-2735` in the table below, its `primitive_formula` is `PaO`. However, its `full_formula` is `Pa4O4`, which tells us that its standard unit cell actually contains 4 Protactinium (Pa) atoms and 4 Oxygen (O) atoms.
+
+### Data Sample
+
+Below is a sample of the metadata available for each of the 180 benchmark crystals.
 | material_id | primitive_formula | full_formula | pretty_formula | nsites | spacegroup | nelements | elements_list | CrystalSystem | category      |
 |-------------|-------------------|--------------|----------------|--------|------------|-----------|---------------|---------------|---------------|
 | mp-2334     | DyCu              | DyCu         | DyCu           |      2 |        221 |         2 | Cu Dy         | Cubic         | binary_easy   |
