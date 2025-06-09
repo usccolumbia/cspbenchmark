@@ -35,7 +35,7 @@ We used Crystal Structure Prediction Performance Metrics from <a href="https://g
 
 Ranking scores calculation code are shwon in the code folder <a href="https://github.com/usccolumbia/cspbenchmark/blob/main/code/compute_ranking_scores.ipynb" target="_blank">Compute-Ranking-Scores</a>.
 
-<img src="images/sp_crystalSystem.png" width="700">
+<img src="images/space_group.png" width="700">
 
 <img src="images/ranking_M3GNet.png" width="700">
 
