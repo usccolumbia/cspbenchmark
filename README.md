@@ -33,7 +33,7 @@ MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* be
 ## Performance comparison of CSP algorithms over all test structures
 We used Crystal Structure Prediction Performance Metrics from <a href="https://github.com/usccolumbia/CSPBenchMetrics" target="_blank">CSPBenchMetrics</a>.
 
-Ranking scores calculation code are shwon in the code folder <a href="https://github.com/usccolumbia/cspbenchmark/blob/main/eval/compute_ranking_scores.ipynb" target="_blank">Compute-Ranking-Scores</a>.
+Ranking scores calculation code are shwon in the code folder <a href="https://github.com/usccolumbia/cspbenchmark/blob/main/eval/ranking_calculator.py" target="_blank">Ranking calculator</a>.
 
 <img src="images/space_group.png" width="700">
 
