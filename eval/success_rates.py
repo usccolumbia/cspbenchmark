@@ -170,9 +170,9 @@ def main(pred_folder, ground_truth_folder):
     df2 = pd.DataFrame({"formula": fail_list, "algorithm": fail_algo, "target_sg": sg_fail_target, "pred_sg": sg_fail_pred, "fit": fit_fail, "fail_rms": fail_rms})
     df2.to_csv('fail_results.csv', index=None)
 
-    succ_rate = fit_count / total_count if total_count > 0 else 0
-    sg_match_rate = sg_match_count / total_count if total_count > 0 else 0
-    both_match_rate = both_match_count / total_count if total_count > 0 else 0
+    succ_rate = fit_count / 180 if total_count > 0 else 0 #for 180 test samples
+    sg_match_rate = sg_match_count / 180 if total_count > 0 else 0
+    both_match_rate = both_match_count / 180 if total_count > 0 else 0
     succ_rate_data.append({
         "Algorithm": algorithm_name,
         "Success_Rate": succ_rate,
