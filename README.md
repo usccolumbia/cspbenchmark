@@ -9,7 +9,7 @@ Citing our paper: Wei, Lai, Sadman Sadeed Omee, Rongzhi Dong, Nihang Fu, Yuqi So
 
 
 ## A summary of the main CSP softwares. 
-MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; \* benchmarked in our study;
+MLP: machine learning potentials; MOGA: multi-objective genetic algorithm; DFT: density functional theory; GA: genetic algorithm; BO: Bayesian optimization; PSO: particle swarm optimization; NN: neural network; RL: reinforcement learning; \* benchmarked in our study;
   
 | Algorithm | Year | Category | Open-source | URL Link | Program Lang |
 |-----------|------|----------|-------------|----------|--------------|
